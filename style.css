@@ -23,10 +23,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 100px 20px;
     background: url("banner.jpeg") center/cover no-repeat;
     color: white;
     position: relative;
+    text-align: center;
 }
 
 .main-header::before {
@@ -43,26 +45,16 @@ body {
 
 .main-header h1 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(28px, 6vw, 44px);
+    font-size: 44px;
     margin: 0;
-
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    text-align: center;
-}
-
-.main-header {
-    padding: 80px 20px;
-    text-align: center;
+    line-height: 1.2;
+    display: inline-block;
 }
 
 .main-header p {
     font-size: 16px;
     opacity: 0.9;
+    margin-top: 10px;
 }
 
 /* ===================== */
@@ -452,8 +444,12 @@ button:hover {
 /* ===================== */
 
 @media (max-width: 768px) {
+    .main-header {
+        padding: 80px 15px;
+    }
+
     .main-header h1 {
-        font-size: 30px;
+        font-size: 28px;
     }
 }
 
