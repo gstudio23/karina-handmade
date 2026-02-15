@@ -45,6 +45,12 @@ body {
     font-family: 'Cormorant Garamond', serif;
     font-size: 44px;
     margin: 0;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    white-space: nowrap;
 }
 
 .main-header p {
@@ -437,6 +443,12 @@ button:hover {
 /* ===================== */
 /* MOBILE */
 /* ===================== */
+
+@media (max-width: 768px) {
+    .main-header h1 {
+        font-size: 30px;
+    }
+}
 
 @media (max-width: 768px) {
 
