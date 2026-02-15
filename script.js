@@ -390,22 +390,22 @@ function checkout() {
         return;
     }
 
-    const name = document.getElementById("customer-name").value.trim();
-    const phone = document.getElementById("customer-phone").value.trim();
-    const address = document.getElementById("customer-address").value.trim();
-    const comment = document.getElementById("customer-comment").value.trim();
+    const name = document.getElementById("customer-name")?.value || "";
+    const phone = document.getElementById("customer-phone")?.value || "";
+    const address = document.getElementById("customer-address")?.value || "";
+    const comment = document.getElementById("customer-comment")?.value || "";
 
     if (!name || !phone) {
-        alert("Пожалуйста, заполните имя и телефон");
+        alert("Введите имя и телефон");
         return;
     }
 
-    let message = "🧶 Новый заказ\n\n";
+    let message = "🧶 Новый заказ:\n\n";
 
     cart.forEach(item => {
         const productName = translations[lang][item.id + "Title"];
-        let colorText = "";
 
+        let colorText = "";
         if (item.color && translations[lang].colors[item.color]) {
             colorText = " (" + translations[lang].colors[item.color] + ")";
         }
@@ -413,16 +413,15 @@ function checkout() {
         message += `• ${productName}${colorText} — ${item.price} Kč\n`;
     });
 
-    message += "\n———\n";
-    message += `Имя: ${name}\n`;
-    message += `Телефон: ${phone}\n`;
+    message += `\n👤 Имя: ${name}`;
+    message += `\n📞 Телефон: ${phone}`;
 
-    if (address) {
-        message += `Адрес: ${address}\n`;
+    if (address.trim() !== "") {
+        message += `\n📍 Адрес: ${address}`;
     }
 
-    if (comment) {
-        message += `Комментарий: ${comment}\n`;
+    if (comment.trim() !== "") {
+        message += `\n💬 Комментарий: ${comment}`;
     }
 
     const telegramUrl =
