@@ -73,7 +73,13 @@ aboutTitle: "Обо мне",
 aboutMain: "Я вяжу крючком, потому что это меня успокаивает.",
 aboutText1: "Каждая игрушка создаётся вручную с вниманием к деталям.",
 aboutText2: "Иногда я продаю готовые работы, а иногда вяжу на заказ.",
-aboutText3: "Если вам что-то понравилось — я буду рада связать это для вас."
+aboutText3: "Если вам что-то понравилось — я буду рада связать это для вас.",
+
+orderMessage: "🧶 Новый заказ:",
+nameLabel: "Имя",
+phoneLabel: "Телефон",
+addressLabel: "Адрес",
+commentLabel: "Комментарий"
 },
 
 ua: {
@@ -131,6 +137,12 @@ aboutMain: "Я в’яжу гачком, бо це мене заспокоює."
 aboutText1: "Кожна іграшка створюється вручну з увагою до деталей.",
 aboutText2: "Іноді я продаю готові роботи, а іноді в’яжу на замовлення.",
 aboutText3: "Якщо вам щось сподобалось — я з радістю зв’яжу це для вас.",
+
+orderMessage: "🧶 Нове замовлення:",
+nameLabel: "Ім’я",
+phoneLabel: "Телефон",
+addressLabel: "Адреса",
+commentLabel: "Коментар"
 },
 
 cz: {
@@ -188,6 +200,12 @@ aboutMain: "Háčkuji, protože mě to uklidňuje.",
 aboutText1: "Každá hračka je vyráběna ručně s důrazem na detail.",
 aboutText2: "Někdy prodávám hotové výrobky, někdy háčkuji na zakázku.",
 aboutText3: "Pokud se vám něco líbí — ráda vám to uháčkuji na přání.",
+
+orderMessage: "🧶 Nová objednávka:",
+nameLabel: "Jméno",
+phoneLabel: "Telefon",
+addressLabel: "Adresa",
+commentLabel: "Komentář"
 },
 
 en: {
@@ -246,6 +264,12 @@ aboutMain: "I crochet because it helps me relax.",
 aboutText1: "Each toy is handmade with attention to detail.",
 aboutText2: "Sometimes I sell ready-made pieces, and sometimes I crochet custom orders.",
 aboutText3: "If something catches your eye — I would be happy to make it for you.",
+
+orderMessage: "🧶 New order:",
+nameLabel: "Name",
+phoneLabel: "Phone",
+addressLabel: "Address",
+commentLabel: "Comment"
 }
 }
 
@@ -400,7 +424,7 @@ function checkout() {
         return;
     }
 
-    let message = "🧶 Новый заказ:\n\n";
+    let message = translations[lang].orderMessage + "\n\n";
 
     cart.forEach(item => {
         const productName = translations[lang][item.id + "Title"];
@@ -413,15 +437,15 @@ function checkout() {
         message += `• ${productName}${colorText} — ${item.price} Kč\n`;
     });
 
-    message += `\n👤 Имя: ${name}`;
-    message += `\n📞 Телефон: ${phone}`;
+    message += `\n👤 ${translations[lang].nameLabel}: ${name}`;
+    message += `\n📞 ${translations[lang].phoneLabel}: ${phone}`;
 
     if (address.trim() !== "") {
-        message += `\n📍 Адрес: ${address}`;
+    message += `\n📍 ${translations[lang].addressLabel}: ${address}`;
     }
 
     if (comment.trim() !== "") {
-        message += `\n💬 Комментарий: ${comment}`;
+        message += `\n💬 ${translations[lang].commentLabel}: ${comment}`;
     }
 
     const telegramUrl =
