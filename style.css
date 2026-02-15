@@ -295,7 +295,7 @@ button:hover {
     resize: none;
     height: 90px;
 }
-.cart-footer button {
+.cart-footer button:not(.close-cart) {
     width: 100%;
     margin-top: 10px;
     padding: 12px;
