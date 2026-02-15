@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karina Handmade Toys</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="main-header">
+    <h1 data-i18n="title">Karina Handmade Toys 🧶</h1>
+    <p data-i18n="subtitle">Теплые вязаные игрушки с любовью</p>
+
+    <div class="lang-switch">
+        <button onclick="setLanguage('en')">EN</button>
+        <button onclick="setLanguage('cz')">CZ</button>
+        <button onclick="setLanguage('ua')">UA</button>
+        <button onclick="setLanguage('ru')">RU</button>
+    </div>
+</header>
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<main>
+<section class="products">
+
+    <!-- ЛЯГУШКА -->
+    <article class="card">
+        <img src="frog.jpeg" onclick="openLightbox(this.src)">
+        <h2 data-i18n="frogTitle">Лягушечка</h2>
+        <p data-i18n="frogDesc">23 см</p>
+        <p class="price">300 Kč</p>
+        <button onclick="addToCart('frog',300)" data-i18n="orderBtn">Заказать</button>
+    </article>
+
+    <!-- ПОДСОЛНУХ -->
+    <article class="card">
+        <img src="sunflower.jpeg" onclick="openLightbox(this.src)">
+        <h2 data-i18n="sunflowerTitle">Подсолнух</h2>
+        <p data-i18n="sunflowerDesc">21 см</p>
+        <p class="price">350 Kč</p>
+        <button onclick="addToCart('sunflower',350)" data-i18n="orderBtn">Заказать</button>
+    </article>
+
+    <!-- ЧЕРЕПАШКА -->
+    <article class="card">
+        <img src="turtle.jpeg" onclick="openLightbox(this.src)">
+        <h2 data-i18n="turtleTitle">Черепашка</h2>
+        <p data-i18n="turtleDesc">15 см</p>
+        <p class="price">450 Kč</p>
+        <button onclick="addToCart('turtle',450)" data-i18n="orderBtn">Заказать</button>
+    </article>
+
+    <!-- ТЮЛЬПАН -->
+    <article class="card">
+        <img id="tulip-main" src="tulip-red.jpeg" onclick="openLightbox(this.src)">
+        <h2 data-i18n="tulipTitle">Тюльпан</h2>
+        <p data-i18n="tulipDesc">27 см</p>
+        <p class="price">250 Kč</p>
+
+        <div class="color-picker">
+            <span class="color-circle active" style="background:#d63c3c"
+                onclick="selectColor(this,'tulip','red')"></span>
+            <span class="color-circle" style="background:#c79be7"
+                onclick="selectColor(this,'tulip','lavender')"></span>
+            <span class="color-circle" style="background:#f5a6c8"
+                onclick="selectColor(this,'tulip','pink')"></span>
+            <span class="color-circle" style="background:#f6d24a"
+                onclick="selectColor(this,'tulip','yellow')"></span>
+        </div>
+
+        <button onclick="addToCart('tulip',250)" data-i18n="orderBtn">Заказать</button>
+    </article>
+
+    <!-- ПАУЧОК -->
+    <article class="card">
+        <img src="spider.jpeg" onclick="openLightbox(this.src)">
+        <h2 data-i18n="spiderTitle">Паучок</h2>
+        <p data-i18n="spiderDesc">17 см</p>
+        <p class="price">250 Kč</p>
+        <button onclick="addToCart('spider',250)" data-i18n="orderBtn">Заказать</button>
+    </article>
+
+    <!-- КОРОВА -->
+    <article class="card">
+        <div class="image-wrapper">
+            <img id="cow-main" src="cow1.jpeg"
+                onclick="openLightbox('cow1.jpeg','cow',0)">
+            <div class="arrow left"
+                onclick="prevImageGallery(event,'cow','cow-main')">❮</div>
+            <div class="arrow right"
+                onclick="nextImageGallery(event,'cow','cow-main')">❯</div>
+        </div>
+        <h2 data-i18n="cowTitle">Плюшевая коровка</h2>
+        <p data-i18n="cowDesc">39 см</p>
+        <p class="price">1000 Kč</p>
+        <button onclick="addToCart('cow',1000)" data-i18n="orderBtn">Заказать</button>
+    </article>
+
+    <!-- СВИНКА -->
+    <article class="card">
+        <div class="image-wrapper">
+            <img id="pig-main" src="pig1.jpeg"
+                onclick="openLightbox('pig1.jpeg','pig',0)">
+            <div class="arrow left"
+                onclick="prevImageGallery(event,'pig','pig-main')">❮</div>
+            <div class="arrow right"
+                onclick="nextImageGallery(event,'pig','pig-main')">❯</div>
+        </div>
+        <h2 data-i18n="pigTitle">Свинка</h2>
+        <p data-i18n="pigDesc">35 см</p>
+        <p class="price">800 Kč</p>
+        <button onclick="addToCart('pig',800)" data-i18n="orderBtn">Заказать</button>
+    </article>
+
+    <!-- МИШКА -->
+    <article class="card">
+        <div class="image-wrapper">
+            <img id="balloon-main" src="balloon1.jpeg"
+                onclick="openLightbox('balloon1.jpeg','balloonBear',0)">
+            <div class="arrow left"
+                onclick="prevImageGallery(event,'balloonBear','balloon-main')">❮</div>
+            <div class="arrow right"
+                onclick="nextImageGallery(event,'balloonBear','balloon-main')">❯</div>
+        </div>
+        <h2 data-i18n="balloonBearTitle">Мишка с шариками</h2>
+        <p data-i18n="balloonBearDesc">Персонализированная картина</p>
+        <p class="price">800 Kč</p>
+        <button onclick="addToCart('balloonBear',800)" data-i18n="orderBtn">Заказать</button>
+    </article>
+
+    <!-- СНЕГОВИК -->
+    <article class="card">
+        <img id="snowman-main" src="snowman-red.jpeg"
+            onclick="openLightbox(this.src)">
+        <h2 data-i18n="snowmanTitle">Снеговик</h2>
+        <p data-i18n="snowmanDesc">Зимний вязаный снеговик</p>
+        <p class="price">600 Kč</p>
+
+        <div class="color-picker">
+            <span class="color-circle active" style="background:#d63c3c"
+                onclick="selectColor(this,'snowman','red')"></span>
+            <span class="color-circle" style="background:#5aa9e6"
+                onclick="selectColor(this,'snowman','blue')"></span>
+            <span class="color-circle" style="background:#f5a6c8"
+                onclick="selectColor(this,'snowman','pink')"></span>
+            <span class="color-circle" style="background:#2e5e3e"
+                onclick="selectColor(this,'snowman','green')"></span>
+            <span class="color-circle" style="background:#c49a6c"
+                onclick="selectColor(this,'snowman','beige')"></span>
+        </div>
+
+        <button onclick="addToCart('snowman',600)" data-i18n="orderBtn">Заказать</button>
+    </article>
+
+    <!-- ЗАЙЧИК ДЛЯ МАЛЫШЕЙ -->
+    <article class="card">
+        <img src="baby-bunny.jpeg" onclick="openLightbox(this.src)">
+        <h2 data-i18n="babyBunnyTitle"></h2>
+        <p data-i18n="babyBunnyDesc"></p>
+        <p class="price">300 Kč</p>
+        <button onclick="addToCart('babyBunny',300)" data-i18n="orderBtn"></button>
+    </article>
+
+    <!-- ЗАЙЧИК С БАНТИКАМИ -->
+    <article class="card">
+        <img src="bow-bunny.jpeg" onclick="openLightbox(this.src)">
+        <h2 data-i18n="bowBunnyTitle">Зайчик с бантиками</h2>
+        <p data-i18n="bowBunnyDesc">450 крон</p>
+        <p class="price">450 Kč</p>
+        <button onclick="addToCart('bowBunny',450)" data-i18n="orderBtn">Заказать</button>
+    </article>
+
+    <!-- ПИВО -->
+    <article class="card">
+        <img id="beer-main" src="beer-yellow.jpeg"
+            onclick="openLightbox(this.src)">
+        <h2 data-i18n="beerTitle">Пиво</h2>
+        <p data-i18n="beerDesc">30 см</p>
+        <p class="price">800 Kč</p>
+
+        <div class="color-picker">
+            <span class="color-circle active" style="background:#f5d76e"
+                onclick="selectColor(this,'beer','yellow')"></span>
+            <span class="color-circle" style="background:#8b4513"
+                onclick="selectColor(this,'beer','brown')"></span>
+            <span class="color-circle" style="background:#3d7a3f"
+                onclick="selectColor(this,'beer','green')"></span>
+        </div>
+
+        <button onclick="addToCart('beer',800)" data-i18n="orderBtn">Заказать</button>
+    </article>
+
+</section>
+</main>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about">
+
+    <div class="about-decoration"></div>
+
+    <div class="about-container">
+
+        <h2 data-i18n="aboutTitle">Обо мне</h2>
+
+        <p class="about-main" data-i18n="aboutMain"></p>
+
+        <div class="about-divider"></div>
+
+        <p data-i18n="aboutText1"></p>
+        <p data-i18n="aboutText2"></p>
+        <p data-i18n="aboutText3"></p>
+
+        <div class="about-heart">🧶</div>
+
+    </div>
+</section>
+
+
+<!-- ================= CART ================= -->
+
+<div class="cart-icon" onclick="toggleCart()">
+    🛒 <span id="cart-count">0</span>
+</div>
+
+<div id="overlay" class="overlay" onclick="toggleCart()"></div>
+
+<aside id="cart" class="cart">
+
+    <button class="close-cart" onclick="toggleCart()">✖</button>
+    <h2 data-i18n="cartTitle">Корзина</h2>
+
+    <div class="cart-content">
+        <ul id="cart-items"></ul>
+    </div>
+
+    <div class="cart-footer">
+
+        <p>
+            <strong>
+                <span data-i18n="totalLabel">Итого</span>:
+                <span id="cart-total">0</span> Kč
+            </strong>
+        </p>
+
+        <input type="text" id="customer-name"
+            data-i18n-placeholder="namePlaceholder">
+
+        <input type="tel" id="customer-phone"
+            data-i18n-placeholder="phonePlaceholder">
+
+        <input type="text" id="customer-address"
+            data-i18n-placeholder="addressPlaceholder">
+
+        <textarea id="customer-comment"
+            data-i18n-placeholder="commentPlaceholder"></textarea>
+
+        <button onclick="clearCart()" data-i18n="clearCartBtn"></button>
+        <button onclick="checkout()" data-i18n="checkoutBtn"></button>
+
+    </div>
+</aside>
+
+
+<!-- ================= LIGHTBOX ================= -->
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close" onclick="closeLightbox(event)">✖</span>
+    <button class="lightbox-arrow left" onclick="prevLightbox(event)">❮</button>
+    <img id="lightbox-img">
+    <button class="lightbox-arrow right" onclick="nextLightbox(event)">❯</button>
+</div>
+
+
+<!-- ================= SCROLL BUTTON ================= -->
+
+<button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
+
+
+<script src="script.js"></script>
+</body>
+</html>
