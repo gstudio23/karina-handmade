@@ -383,42 +383,53 @@ function toggleCart() {
 
 function checkout() {
 
-const lang = localStorage.getItem("language") || "ru";
+    const lang = localStorage.getItem("language") || "ru";
 
-if (cart.length === 0) {
-alert(translations[lang].emptyCart);
-return;
-}
+    if (cart.length === 0) {
+        alert(translations[lang].emptyCart);
+        return;
+    }
 
-const name = document.getElementById("customer-name").value;
-const phone = document.getElementById("customer-phone").value;
+    const name = document.getElementById("customer-name").value.trim();
+    const phone = document.getElementById("customer-phone").value.trim();
+    const address = document.getElementById("customer-address").value.trim();
+    const comment = document.getElementById("customer-comment").value.trim();
 
-if (!name || !phone) {
-alert("Fill name and phone");
-return;
-}
+    if (!name || !phone) {
+        alert("Пожалуйста, заполните имя и телефон");
+        return;
+    }
 
-let message = "🧶 Order:\n\n";
+    let message = "🧶 Новый заказ\n\n";
 
-cart.forEach(item => {
+    cart.forEach(item => {
+        const productName = translations[lang][item.id + "Title"];
+        let colorText = "";
 
-const productName = translations[lang][item.id + "Title"];
+        if (item.color && translations[lang].colors[item.color]) {
+            colorText = " (" + translations[lang].colors[item.color] + ")";
+        }
 
-let colorText = "";
-if (item.color && translations[lang].colors[item.color]) {
-colorText = " (" + translations[lang].colors[item.color] + ")";
-}
+        message += `• ${productName}${colorText} — ${item.price} Kč\n`;
+    });
 
-message += `• ${productName}${colorText} — ${item.price} Kč\n`;
-});
+    message += "\n———\n";
+    message += `Имя: ${name}\n`;
+    message += `Телефон: ${phone}\n`;
 
-message += `\nName: ${name}\nPhone: ${phone}`;
+    if (address) {
+        message += `Адрес: ${address}\n`;
+    }
 
-const telegramUrl =
-"https://t.me/kArishkaaaaaaaaaaaa?text=" +
-encodeURIComponent(message);
+    if (comment) {
+        message += `Комментарий: ${comment}\n`;
+    }
 
-window.open(telegramUrl, "_blank");
+    const telegramUrl =
+        "https://t.me/kArishkaaaaaaaaaaaa?text=" +
+        encodeURIComponent(message);
+
+    window.open(telegramUrl, "_blank");
 }
 
 // =====================
