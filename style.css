@@ -305,14 +305,12 @@ button:hover {
 .cart-footer button:first-of-type {
     background: #b7a18e;
 }
-
 .cart-footer button:last-of-type {
     background: #8c7b6b;
 }
 .cart-icon.bump {
     animation: bump 0.35s ease;
 }
-
 .close-cart {
     position: absolute;
     top: 15px;
