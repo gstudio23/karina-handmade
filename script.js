@@ -408,7 +408,8 @@ function toggleCart() {
 function checkout() {
 
     const lang = localStorage.getItem("language") || "ru";
-
+    console.log("Current language:", lang);
+    
     if (cart.length === 0) {
         alert(translations[lang].emptyCart);
         return;
