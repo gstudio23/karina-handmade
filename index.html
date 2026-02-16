@@ -24,6 +24,13 @@
         <button onclick="setLanguage('ua')">UA</button>
         <button onclick="setLanguage('ru')">RU</button>
     </div>
+
+    <!-- BURGER BUTTON -->
+    <div class="burger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 </header>
 
 
@@ -224,7 +231,7 @@
 
 <!-- ================= MATERIALS ================= -->
 
-<section class="materials">
+<section id="materials" class="materials">
 
     <div class="materials-container">
 
@@ -261,7 +268,7 @@
 
 <!-- ================= ABOUT ================= -->
 
-<section class="about">
+<section id="about" class="about">
 
     <div class="about-decoration"></div>
 
@@ -284,7 +291,7 @@
 
 <!-- ================= DELIVERY ================= -->
 
-<section class="delivery-section">
+<section id="delivery" class="delivery">
 
     <div class="delivery-container">
 
@@ -359,6 +366,16 @@
 
 <button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
 
+<!-- SIDE MENU -->
+<nav id="sideMenu" class="side-menu">
+    <button class="close-menu" onclick="toggleMenu()">✖</button>
+
+    <a href="#about" onclick="toggleMenu()">Обо мне</a>
+    <a href="#materials" onclick="toggleMenu()">Материалы и качество</a>
+    <a href="#delivery" onclick="toggleMenu()">Доставка</a>
+</nav>
+
+<div id="menuOverlay" class="menu-overlay" onclick="toggleMenu()"></div>
 
 <script src="script.js"></script>
 </body>

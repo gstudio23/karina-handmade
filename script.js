@@ -655,3 +655,11 @@ setLanguage(savedLang);
 
 updateCart();
 });
+
+function toggleMenu() {
+    const menu = document.getElementById("sideMenu");
+    const overlay = document.getElementById("menuOverlay");
+
+    menu.classList.toggle("open");
+    overlay.classList.toggle("active");
+}

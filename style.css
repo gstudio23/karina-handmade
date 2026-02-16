@@ -928,3 +928,83 @@ body.cart-open #scrollTopBtn {
         font-size: 15px;
     }
 }
+
+/* ================= BURGER ================= */
+
+.burger {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 30px;
+    cursor: pointer;
+    z-index: 5000;
+}
+
+.burger span {
+    display: block;
+    height: 3px;
+    background: white;
+    margin: 6px 0;
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+
+/* ================= SIDE MENU ================= */
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: white;
+    box-shadow: -5px 0 25px rgba(0,0,0,0.15);
+    padding: 80px 30px;
+    transition: right 0.3s ease;
+    z-index: 4500;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.side-menu.open {
+    right: 0;
+}
+
+.side-menu a {
+    text-decoration: none;
+    color: #2d2d2d;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.side-menu a:hover {
+    color: #8c7b6b;
+}
+
+.close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* overlay */
+
+.menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 4000;
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
