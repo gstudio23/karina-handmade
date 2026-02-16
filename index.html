@@ -370,16 +370,16 @@
 <nav id="sideMenu" class="side-menu">
 
     <a href="#about"
-       onclick="toggleMenu()"
-       data-i18n="menuAbout"></a>
+   onclick="scrollToSection(event, 'about')"
+   data-i18n="menuAbout"></a>
 
     <a href="#materials"
-       onclick="toggleMenu()"
-       data-i18n="menuMaterials"></a>
+    onclick="scrollToSection(event, 'materials')"
+    data-i18n="menuMaterials"></a>
 
     <a href="#delivery"
-       onclick="toggleMenu()"
-       data-i18n="menuDelivery"></a>
+    onclick="scrollToSection(event, 'delivery')"
+    data-i18n="menuDelivery"></a>
 </nav>
 
 <div id="menuOverlay" class="menu-overlay" onclick="toggleMenu()"></div>

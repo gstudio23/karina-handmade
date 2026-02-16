@@ -682,7 +682,22 @@ function toggleMenu() {
     overlay.classList.toggle("active");
     burger.classList.toggle("active");
 }
+function scrollToSection(event, id) {
+    event.preventDefault();
 
+    const section = document.getElementById(id);
+    if (!section) return;
+
+    const yOffset = window.innerHeight / 4;
+    const y = section.getBoundingClientRect().top + window.scrollY - yOffset;
+
+    window.scrollTo({
+        top: y,
+        behavior: "smooth"
+    });
+
+    toggleMenu();
+}
 // =====================
 // FOOTER YEAR
 // =====================
