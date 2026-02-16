@@ -47,6 +47,9 @@ bowBunnyTitle: "Зайчик с бантиками",
 bowBunnyDesc: "Милый зайчик с бантиками на ушках.",
 beerTitle: "Вязаное пиво",
 beerDesc: "Высота 30 см. Возможны жёлтый, коричневый и зелёный цвета.",
+squirrelTitle: "Белочка",
+squirrelDesc: "Большая мягкая белочка, 56 см. Пушистая, уютная и идеально подходит для объятий.",
+
 colors: {
 red: "Красный",
 lavender: "Лавандовый",
@@ -108,7 +111,10 @@ babyBunnyDesc: "Наповнені лише ручки, ніжки та голо
 bowBunnyTitle: "Зайчик з бантиками",
 bowBunnyDesc: "Милий зайчик з бантиками.",
 beerTitle: "В’язане пиво",
-beerDesc: "Висота 30 см.",
+beerDesc: "Висота 30 см. Можливе в жовтому, коричневому та зеленому кольорах",
+squirrelTitle: "Білочка",
+squirrelDesc: "Велика м’яка білочка, 56 см. Пухнаста, затишна та ідеальна для обіймів.",
+
 colors: {
 red: "Червоний",
 lavender: "Лавандовий",
@@ -172,6 +178,9 @@ bowBunnyTitle: "Zajíček s mašličkami",
 bowBunnyDesc: "Roztomilý zajíček s mašličkami na uších.",
 beerTitle: "Háčkované pivo",
 beerDesc: "Výška 30 cm. Dostupné barvy: žlutá, hnědá a zelená.",
+squirrelTitle: "Veverka",
+squirrelDesc: "Velká měkká veverka, 56 cm. Nadýchaná, roztomilá a ideální na mazlení.",
+
 colors: {
 red: "Červený",
 lavender: "Levandulový",
@@ -235,6 +244,8 @@ bowBunnyTitle: "Bow Bunny",
 bowBunnyDesc: "Cute bunny with bows on the ears.",
 beerTitle: "Crochet Beer",
 beerDesc: "Height 30 cm. Available in yellow, brown and green colors.",
+squirrelTitle: "Squirrel",
+squirrelDesc: "Large soft squirrel, 56 cm tall. Fluffy, cozy and perfect for cuddles.",
 
 colors: {
 red: "Red",
@@ -409,7 +420,7 @@ function checkout() {
 
     const lang = localStorage.getItem("language") || "ru";
     console.log("Current language:", lang);
-    
+
     if (cart.length === 0) {
         alert(translations[lang].emptyCart);
         return;
@@ -463,7 +474,8 @@ function checkout() {
 const galleries = {
 cow: ["cow1.jpeg", "cow2.jpeg", "cow3.jpeg"],
 pig: ["pig1.jpeg", "pig2.jpeg"],
-balloonBear: ["balloon1.jpeg", "balloon2.jpeg"]
+balloonBear: ["balloon1.jpeg", "balloon2.jpeg"],
+squirrel: ["squirrel1.jpeg", "squirrel2.jpeg", "squirrel3.jpeg"],
 };
 
 function openLightbox(src, galleryName = null, index = 0) {

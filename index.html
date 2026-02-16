@@ -199,6 +199,27 @@
         <button onclick="addToCart('beer',800)" data-i18n="orderBtn">Заказать</button>
     </article>
 
+    <!-- БЕЛОЧКА -->
+    <article class="card">
+        <div class="image-wrapper">
+            <img id="squirrel-main" src="squirrel1.jpeg"
+                onclick="openLightbox('squirrel1.jpeg','squirrel',0)">
+
+            <div class="arrow left"
+                onclick="prevImageGallery(event,'squirrel','squirrel-main')">❮</div>
+
+            <div class="arrow right"
+                onclick="nextImageGallery(event,'squirrel','squirrel-main')">❯</div>
+        </div>
+
+        <h2 data-i18n="squirrelTitle">Белочка</h2>
+        <p data-i18n="squirrelDesc">56 см</p>
+        <p class="price">1000 Kč</p>
+
+        <button onclick="addToCart('squirrel',1000)"
+            data-i18n="orderBtn">Заказать</button>
+    </article>
+
 </section>
 </main>
 
