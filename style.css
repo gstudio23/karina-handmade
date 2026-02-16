@@ -1038,3 +1038,11 @@ body.cart-open #scrollTopBtn {
     opacity: 1;
     visibility: visible;
 }
+
+.footer {
+    padding: 60px 20px;
+    text-align: center;
+    background: #efe6dc;
+    font-size: 14px;
+    opacity: 0.8;
+}
