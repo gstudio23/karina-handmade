@@ -168,11 +168,10 @@ materialsQualityText: "Іграшки пов’язані з м’якої пл�
 materialsCareTitle: "Легкий догляд",
 materialsCareText: "Іграшки можна прати в машині та сушити в сушарці, тому за ними легко доглядати.",
 
-deliveryTitle: "Доставка",
-deliveryText1: "Відправляю замовлення по всій Чехії зручною місцевою поштовою службою.",
-deliveryText2: "Також можлива доставка до інших європейських країн через DHL.",
+deliveryTitle: "Doručení",
+deliveryText1: "Zásilky po celé České republice odesílám prostřednictvím místní poštovní služby dle domluvy.",
+deliveryText2: "Doručení do dalších evropských zemí je možné přes DHL.",
 },
-
 cz: {
 title: "Karina Ručně Háčkované Hračky 🧶",
 subtitle: "Teplé háčkované hračky s láskou",
@@ -324,9 +323,9 @@ materialsCareText: "The toys can be machine washed and tumble dried, making them
 materialsHandmadeTitle: "Handmade",
 materialsHandmadeText: "Each toy is carefully handmade with attention to detail and neat finishing.",
 
-deliveryTitle: "Doručení",
-deliveryText1: "Zásilky po celé České republice odesílám prostřednictvím místní poštovní služby dle domluvy.",
-deliveryText2: "Doručení do dalších evropských zemí je možné přes DHL.",
+deliveryTitle: "Delivery",
+deliveryText1: "I ship across the Czech Republic using convenient local postal services.",
+deliveryText2: "Delivery to other European countries is available via DHL.",
 }
 }
 
