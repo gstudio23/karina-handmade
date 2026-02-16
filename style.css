@@ -52,7 +52,7 @@ body {
 /* логотип */
 .logo {
     position: absolute;
-    top: 15px;     /* выше */
+    top: 5px;     /* выше */
     left: 20px;    /* чуть ближе к краю */
 
     width: 320px;  /* размер можешь менять */
