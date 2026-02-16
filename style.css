@@ -1060,3 +1060,17 @@ body.cart-open #scrollTopBtn {
 #delivery {
     scroll-margin-top: 120px;
 }
+
+
+/* ===== LOGO ===== */
+
+.logo {
+    position: fixed;   /* ЗАФИКСИРОВАН */
+    top: 20px;
+    left: 30px;
+
+    width: 300px;      /* размер */
+    height: auto;
+
+    z-index: 9999;     /* всегда поверх */
+}
