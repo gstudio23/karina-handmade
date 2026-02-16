@@ -73,10 +73,10 @@ body {
 }
 
 .logo {
-    width: 180px; /* можешь менять 160–220 */
-    height: auto;
-    display: block;
+    width: 180px;
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.4));
 }
+
 /* ===================== */
 /* LANGUAGE SWITCH */
 /* ===================== */
