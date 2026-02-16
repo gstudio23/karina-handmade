@@ -38,6 +38,8 @@ body {
     text-align: center;
 
     overflow: hidden;
+    align-items: center;
+    justify-content: center;
 }
 
 /* затемнение баннера */
@@ -52,16 +54,19 @@ body {
 /* логотип */
 .logo {
     position: absolute;
-    top: 5px;     /* выше */
-    left: 20px;    /* чуть ближе к краю */
+    top: 0;
+    left: 0;
 
-    width: 320px;  /* размер можешь менять */
+    margin: 25px 0 0 30px;
+
+    width: 340px;
     height: auto;
 
-    z-index: 5;
-    pointer-events: none;
+    z-index: 10;
 }
-
+.logo {
+    align-self: flex-start;
+}
 /* контент поверх затемнения */
 .main-header h1,
 .main-header p,
