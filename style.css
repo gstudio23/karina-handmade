@@ -1099,8 +1099,3 @@ body.cart-open #scrollTopBtn {
     }
 
 }
-@media (max-width: 768px) {
-    body {
-        background: red !important;
-    }
-}
