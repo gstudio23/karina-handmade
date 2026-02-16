@@ -659,7 +659,9 @@ updateCart();
 function toggleMenu() {
     const menu = document.getElementById("sideMenu");
     const overlay = document.getElementById("menuOverlay");
+    const burger = document.querySelector(".burger");
 
     menu.classList.toggle("open");
     overlay.classList.toggle("active");
+    burger.classList.toggle("active");
 }
