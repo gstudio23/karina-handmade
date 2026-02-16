@@ -52,13 +52,13 @@ body {
 /* логотип */
 .logo {
     position: absolute;
-    top: 25px;
-    left: 30px;
+    top: 15px;     /* выше */
+    left: 20px;    /* чуть ближе к краю */
 
-    width: 300px;        /* можешь менять */
+    width: 320px;  /* размер можешь менять */
     height: auto;
 
-    z-index: 3;
+    z-index: 5;
     pointer-events: none;
 }
 
