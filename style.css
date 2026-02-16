@@ -100,7 +100,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 25px;
     padding: 40px 20px;
-    justify-items: center;
+    justify-items: stretch;
 }
 
 .card {
@@ -1166,19 +1166,30 @@ body::before {
     background: #efe6dc; /* твой бежевый */
 }
 
+/* ================= MOBILE 2 COLUMNS HARD FIX ================= */
+
 @media (max-width: 768px) {
 
     .products {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 15px;   /* можно 12px если будет тесно */
+        gap: 12px;
+        padding: 16px;
     }
 
     .card {
-        padding: 14px;   /* уменьшаем внутренние отступы */
+        width: 100%;
+        max-width: 100%;
+        padding: 12px;   /* уменьшаем внутренние отступы */
+        border-radius: 14px;
     }
 
     .card img {
-        height: 220px;   /* чтобы не были слишком вытянутыми */
+        width: 100%;
+        height: auto;   /* ❗ УБИРАЕМ фиксированную высоту */
+        aspect-ratio: 3 / 4;  /* сохраняем пропорцию */
+        object-fit: cover;
+        border-radius: 10px;
     }
 
     .card h2 {
@@ -1186,10 +1197,15 @@ body::before {
     }
 
     .card p {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .price {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px;
         font-size: 14px;
     }
 
