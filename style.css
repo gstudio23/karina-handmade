@@ -482,7 +482,7 @@ button:hover {
 }
 
 /* ===================== */
-/* HOVER EFFECT FOR GALLERY */
+/* IMAGE HOVER ONLY */
 /* ===================== */
 
 .image-wrapper {
@@ -490,7 +490,7 @@ button:hover {
     overflow: hidden;
 }
 
-/* затемнение */
+/* затемнение только фото */
 .image-wrapper::after {
     content: "";
     position: absolute;
@@ -501,20 +501,20 @@ button:hover {
     pointer-events: none;
 }
 
-/* затемнение при наведении */
-.card:hover .image-wrapper::after {
+/* затемнение ТОЛЬКО при наведении на фото */
+.image-wrapper:hover::after {
     background: rgba(0,0,0,0.25);
 }
 
-/* стрелки изначально скрыты */
+/* стрелки скрыты */
 .image-wrapper .arrow {
     opacity: 0;
     pointer-events: none;
     transition: 0.3s ease;
 }
 
-/* показываем стрелки только при hover */
-.card:hover .image-wrapper .arrow {
+/* стрелки появляются только при наведении на фото */
+.image-wrapper:hover .arrow {
     opacity: 1;
     pointer-events: auto;
 }
