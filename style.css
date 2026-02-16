@@ -101,10 +101,6 @@ body {
     overflow: hidden;
 }
 
-.card:hover {
-    transform: translateY(-6px);
-}
-
 /* изображение */
 .card img {
     width: 100%;
@@ -201,10 +197,6 @@ button:hover {
 /* ===================== */
 /* IMAGE GALLERY */
 /* ===================== */
-
-.image-wrapper {
-    position: relative;
-}
 
 .image-wrapper .arrow {
     position: absolute;
@@ -475,22 +467,6 @@ button:hover {
     overflow: hidden;
 }
 
-/* затемнение ТОЛЬКО картинки */
-.image-wrapper::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0);
-    transition: 0.3s ease;
-    border-radius: 14px;
-    pointer-events: none;
-}
-
-/* затемняется только фото */
-.image-wrapper:hover::after {
-    background: rgba(0,0,0,0.35);
-}
-
 /* стрелки скрыты */
 .image-wrapper .arrow {
     opacity: 0;
@@ -505,12 +481,6 @@ button:hover {
 }
 
 /* ================= IMAGE DARK OVERLAY ================= */
-
-.image-wrapper {
-    position: relative;
-    border-radius: 14px;
-    overflow: hidden;
-}
 
 /* создаём слой затемнения */
 .image-wrapper::before {
@@ -545,6 +515,47 @@ button:hover {
 .image-wrapper:hover .arrow {
     opacity: 1;
 }
+
+/* ================= IMAGE HOVER CLEAN ================= */
+
+.image-wrapper {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+/* затемнение только фото */
+.image-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0);
+    transition: 0.3s ease;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.image-wrapper:hover::before {
+    background: rgba(0,0,0,0.35);
+}
+
+.image-wrapper img {
+    display: block;
+    position: relative;
+    z-index: 0;
+}
+
+.image-wrapper .arrow {
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.image-wrapper:hover .arrow {
+    opacity: 1;
+}
+
 
 /* ===================== */
 /* MOBILE */
