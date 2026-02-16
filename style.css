@@ -90,6 +90,7 @@ body {
 }
 
 .card {
+    position: relative;
     background: white;
     padding: 22px;
     border-radius: 18px;
@@ -97,6 +98,7 @@ body {
     max-width: 300px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.08);
     transition: 0.3s ease;
+    overflow: hidden;
 }
 
 .card:hover {
@@ -104,6 +106,22 @@ body {
     box-shadow: 0 14px 35px rgba(0,0,0,0.12);
 }
 
+/* затемнение картинки */
+.card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0);
+    transition: 0.3s ease;
+    pointer-events: none;
+    border-radius: 18px;
+}
+
+.card:hover::after {
+    background: rgba(0,0,0,0.25);
+}
+
+/* изображение */
 .card img {
     width: 100%;
     height: 260px;
@@ -112,15 +130,39 @@ body {
     cursor: pointer;
 }
 
-.card h2 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 22px;
-    margin: 15px 0 6px;
+/* стрелки */
+.card-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 38px;
+    height: 38px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    opacity: 0;
+    pointer-events: none;
 }
 
-.card p {
-    font-size: 14px;
-    opacity: 0.8;
+/* позиция стрелок */
+.card-arrow.left {
+    left: 10px;
+}
+
+.card-arrow.right {
+    right: 10px;
+}
+
+/* показываем при hover */
+.card:hover .card-arrow {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .price {
