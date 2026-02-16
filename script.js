@@ -685,9 +685,9 @@ function toggleMenu() {
     burger.classList.toggle("active");
 
     document.body.classList.toggle("menu-open");
-    document.body.classList.toggle("cart-open");
-
 }
+
+
 document.querySelectorAll('.side-menu a').forEach(link => {
     link.addEventListener('click', function(e) {
         e.preventDefault();
