@@ -419,20 +419,27 @@ function toggleCart() {
 function checkout() {
 
     const lang = localStorage.getItem("language") || "ru";
-    console.log("Current language:", lang);
 
     if (cart.length === 0) {
         alert(translations[lang].emptyCart);
         return;
     }
 
-    const name = document.getElementById("customer-name")?.value || "";
-    const phone = document.getElementById("customer-phone")?.value || "";
-    const address = document.getElementById("customer-address")?.value || "";
-    const comment = document.getElementById("customer-comment")?.value || "";
+    const name = document.getElementById("customer-name")?.value.trim() || "";
+    const phone = document.getElementById("customer-phone")?.value.trim() || "";
+    const address = document.getElementById("customer-address")?.value.trim() || "";
+    const comment = document.getElementById("customer-comment")?.value.trim() || "";
 
     if (!name || !phone) {
         alert("Введите имя и телефон");
+        return;
+    }
+
+    // 🔥 Проверяем мишку ДО формирования сообщения
+    const hasBalloonBear = cart.some(item => item.id === "balloonBear");
+
+    if (hasBalloonBear && comment === "") {
+        alert("Для заказа «Мишки с шариками» нужно указать имя в комментарии.");
         return;
     }
 
@@ -452,11 +459,11 @@ function checkout() {
     message += `\n👤 ${translations[lang].nameLabel}: ${name}`;
     message += `\n📞 ${translations[lang].phoneLabel}: ${phone}`;
 
-    if (address.trim() !== "") {
-    message += `\n📍 ${translations[lang].addressLabel}: ${address}`;
+    if (address !== "") {
+        message += `\n📍 ${translations[lang].addressLabel}: ${address}`;
     }
 
-    if (comment.trim() !== "") {
+    if (comment !== "") {
         message += `\n💬 ${translations[lang].commentLabel}: ${comment}`;
     }
 
