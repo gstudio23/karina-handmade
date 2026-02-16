@@ -32,6 +32,14 @@ body {
 
     z-index: 5;
 }
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 300px;
+    height: auto;
+    z-index: 3;
+}
 
 .main-header {
     min-height: 220px;
@@ -75,11 +83,13 @@ body {
     opacity: 0.9;
     margin-top: 10px;
 }
-
-.main-header > * {
+.main-header h1,
+.main-header p,
+.lang-switch {
     position: relative;
     z-index: 2;
 }
+
 /* ===================== */
 /* LANGUAGE SWITCH */
 /* ===================== */
