@@ -24,21 +24,15 @@ body {
 
 .logo {
     position: absolute;
-    top: 30px;
+    top: 25px;
     left: 30px;
 
-    width: 260px;        /* БОЛЬШЕ */
+    width: 320px;   /* можешь менять */
     height: auto;
 
     z-index: 5;
-}
-.logo {
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    width: 300px;
-    height: auto;
-    z-index: 3;
+
+    pointer-events: none; /* чтобы не мешал кнопкам */
 }
 
 .main-header {
