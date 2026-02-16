@@ -1065,12 +1065,12 @@ body.cart-open #scrollTopBtn {
 /* ===== LOGO ===== */
 
 .logo {
-    position: fixed;   /* ЗАФИКСИРОВАН */
+    position: fixed;
     top: 20px;
-    left: 30px;
+    left: 25px;
 
-    width: 300px;      /* размер */
+    width: clamp(140px, 18vw, 300px);
     height: auto;
 
-    z-index: 9999;     /* всегда поверх */
+    z-index: 9999;
 }
