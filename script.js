@@ -682,22 +682,28 @@ function toggleMenu() {
     overlay.classList.toggle("active");
     burger.classList.toggle("active");
 }
-function scrollToSection(event, id) {
-    event.preventDefault();
+document.querySelectorAll('.side-menu a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
 
-    const section = document.getElementById(id);
-    if (!section) return;
+        const id = this.getAttribute('href').substring(1);
+        const section = document.getElementById(id);
 
-    const yOffset = window.innerHeight / 4;
-    const y = section.getBoundingClientRect().top + window.scrollY - yOffset;
+        if (!section) return;
 
-    window.scrollTo({
-        top: y,
-        behavior: "smooth"
+        const sectionHeight = section.offsetHeight;
+        const windowHeight = window.innerHeight;
+
+        const offset = section.offsetTop - (windowHeight / 2) + (sectionHeight / 2);
+
+        window.scrollTo({
+            top: offset,
+            behavior: "smooth"
+        });
+
+        toggleMenu();
     });
-
-    toggleMenu();
-}
+});
 // =====================
 // FOOTER YEAR
 // =====================
