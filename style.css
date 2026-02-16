@@ -31,18 +31,26 @@ body {
     justify-content: center;
     align-items: center;
 
-    padding: 60px 20px 80px 20px;
+    padding: 120px 20px 80px 20px;
 
     background: url("banner.jpeg") center/cover no-repeat;
     color: white;
     text-align: center;
 
     overflow: hidden;
-    align-items: center;
-    justify-content: center;
+}
+.main-header > img.logo {
+    align-self: flex-start;
+}
+.main-header {
+    align-items: center; /* оставляем для текста */
 }
 
-/* затемнение баннера */
+.main-header > *:not(.logo) {
+    position: relative;
+    z-index: 10;
+}
+/* затемнение */
 .main-header::before {
     content: "";
     position: absolute;
@@ -51,42 +59,29 @@ body {
     z-index: 0;
 }
 
-/* логотип */
+/* ===== ЛОГОТИП ===== */
 .logo {
     position: absolute;
-    top: 15px;
-    left: 30px;
 
-    width: 340px;
+    top: 25px;        /* уровень бургера */
+    left: 40px;
+
+    width: 360px;     /* размер как заголовок */
     height: auto;
 
-    z-index: 10;
+    z-index: 50;      /* выше overlay */
+
+    transform: none !important;
+    margin: 0 !important;
 }
-.logo {
-    align-self: flex-start;
-}
+
 /* контент поверх затемнения */
 .main-header h1,
 .main-header p,
 .lang-switch,
 .burger {
     position: relative;
-    z-index: 2;
-}
-
-/* заголовок */
-.main-header h1 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 44px;
-    margin: 0;
-    line-height: 1.2;
-}
-
-/* подзаголовок */
-.main-header p {
-    font-size: 16px;
-    opacity: 0.9;
-    margin-top: 10px;
+    z-index: 10;
 }
 
 /* ===================== */
