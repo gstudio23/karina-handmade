@@ -24,14 +24,13 @@ body {
 
 .logo {
     position: absolute;
-    top: 25px;
-    left: 25px;
+    top: 30px;
+    left: 30px;
 
-    width: 220px;      /* увеличили */
-    max-width: 45vw;   /* чтобы на телефоне не вылезал */
-
+    width: 260px;        /* БОЛЬШЕ */
     height: auto;
-    z-index: 10;
+
+    z-index: 5;
 }
 
 .main-header {
