@@ -674,20 +674,8 @@ body.cart-open #scrollTopBtn {
 .about {
     position: relative;
     padding: 120px 20px;
-    background: linear-gradient(180deg, #f8f4ef 0%, #efe6dc 100%);
+    background: transparent;
     overflow: hidden;
-}
-
-/* декоративный мягкий круг */
-.about-decoration {
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    background: #e6d7c8;
-    border-radius: 50%;
-    top: -150px;
-    right: -150px;
-    opacity: 0.4;
 }
 
 .about-container {
@@ -835,7 +823,7 @@ body.cart-open #scrollTopBtn {
 
 .materials {
     padding: 100px 20px;
-    background: #f8f4ef;
+    background: transparent;
 }
 
 .materials-container {
@@ -1106,4 +1094,37 @@ body.cart-open #scrollTopBtn {
         object-fit: cover;  /* оставляем красиво */
     }
 
+}
+
+body {
+    position: relative;
+    background: #f8f4ef;
+}
+
+/* декоративные линии */
+body {
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+
+    background-image: url("background-lines.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Сплошной фон для нижней части сайта */
+
+.about {
+    padding-bottom: 160px;
+}
+
+.materials,
+.about,
+.delivery {
+    background: #efe6dc;   /* твой бежевый */
 }
