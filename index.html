@@ -370,13 +370,17 @@
 <nav id="sideMenu" class="side-menu">
     <button class="close-menu" onclick="toggleMenu()">✖</button>
 
-    <a href="#about" onclick="toggleMenu()">Обо мне</a>
-    <a href="#materials" onclick="toggleMenu()">Материалы и качество</a>
-    <a href="#delivery" onclick="toggleMenu()">Доставка</a>
+    <a href="#about"
+       onclick="toggleMenu()"
+       data-i18n="menuAbout"></a>
+
+    <a href="#materials"
+       onclick="toggleMenu()"
+       data-i18n="menuMaterials"></a>
+
+    <a href="#delivery"
+       onclick="toggleMenu()"
+       data-i18n="menuDelivery"></a>
 </nav>
 
 <div id="menuOverlay" class="menu-overlay" onclick="toggleMenu()"></div>
-
-<script src="script.js"></script>
-</body>
-</html>
