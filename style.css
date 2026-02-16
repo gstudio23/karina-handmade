@@ -60,7 +60,16 @@ body {
     opacity: 0.9;
     margin-top: 10px;
 }
+.logo-container {
+    margin-bottom: 20px;
+}
 
+.logo {
+    max-width: 160px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 /* ===================== */
 /* LANGUAGE SWITCH */
 /* ===================== */
