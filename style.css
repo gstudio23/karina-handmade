@@ -22,66 +22,68 @@ body {
 /* HEADER */
 /* ===================== */
 
+.main-header {
+    position: relative;
+    min-height: 420px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 120px 20px 80px 20px;
+
+    background: url("banner.jpeg") center/cover no-repeat;
+    color: white;
+    text-align: center;
+
+    overflow: hidden;
+}
+
+/* затемнение баннера */
+.main-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: 0;
+}
+
+/* логотип */
 .logo {
     position: absolute;
     top: 25px;
     left: 30px;
 
-    width: 320px;   /* можешь менять */
+    width: 300px;        /* можешь менять */
     height: auto;
 
-    z-index: 5;
-
-    pointer-events: none; /* чтобы не мешал кнопкам */
+    z-index: 3;
+    pointer-events: none;
 }
 
-.main-header {
-    min-height: 220px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 100px 20px;
-    background: url("banner.jpeg") center/cover no-repeat;
-    color: white;
+/* контент поверх затемнения */
+.main-header h1,
+.main-header p,
+.lang-switch,
+.burger {
     position: relative;
-    text-align: center;
+    z-index: 2;
 }
 
-.main-header::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-
-    background:
-        radial-gradient(
-            circle at top left,
-            rgba(0,0,0,0.65) 0%,
-            rgba(0,0,0,0.45) 35%,
-            rgba(0,0,0,0.35) 60%,
-            rgba(0,0,0,0.25) 100%
-        );
-
-}
-
+/* заголовок */
 .main-header h1 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 44px;
     margin: 0;
     line-height: 1.2;
-    display: inline-block;
 }
 
+/* подзаголовок */
 .main-header p {
     font-size: 16px;
     opacity: 0.9;
     margin-top: 10px;
-}
-.main-header h1,
-.main-header p,
-.lang-switch {
-    position: relative;
-    z-index: 2;
 }
 
 /* ===================== */
