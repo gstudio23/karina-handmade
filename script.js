@@ -245,9 +245,9 @@ materialsCareText: "Hračky lze prát v pračce a sušit v sušičce, takže pé
 materialsHandmadeTitle: "Ruční výroba",
 materialsHandmadeText: "Každá hračka je vyrobena ručně s důrazem na detail a pečlivé zpracování.",
 
-deliveryTitle: "Delivery",
-deliveryText1: "I ship across the Czech Republic using convenient local postal services.",
-deliveryText2: "Delivery to other European countries is available via DHL.",
+deliveryTitle: "Doručení",
+deliveryText1: "Zásilky po celé České republice odesílám prostřednictvím místní poštovní služby dle domluvy.",
+deliveryText2: "Doručení do dalších evropských zemí je možné přes DHL.",
 },
 
 en: {
