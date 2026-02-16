@@ -681,6 +681,9 @@ function toggleMenu() {
     menu.classList.toggle("open");
     overlay.classList.toggle("active");
     burger.classList.toggle("active");
+    
+    document.body.classList.toggle("menu-open");
+
 }
 document.querySelectorAll('.side-menu a').forEach(link => {
     link.addEventListener('click', function(e) {
