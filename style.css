@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* ===================== */
 /* RESET */
 /* ===================== */
@@ -1045,4 +1049,10 @@ body.cart-open #scrollTopBtn {
     background: #efe6dc;
     font-size: 14px;
     opacity: 0.8;
+}
+
+#about,
+#materials,
+#delivery {
+    scroll-margin-top: 120px;
 }
