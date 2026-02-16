@@ -1099,3 +1099,11 @@ body.cart-open #scrollTopBtn {
     }
 
 }
+@media (max-width: 768px) {
+
+    .card img {
+        height: 380px;      /* увеличиваем окно */
+        object-fit: cover;  /* оставляем красиво */
+    }
+
+}
