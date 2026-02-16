@@ -27,12 +27,18 @@ body {
     top: 25px;
     left: 25px;
 
-    width: 140px;   /* размер — можно менять */
+    width: 160px;
     height: auto;
 
-    background: transparent;
+    padding: 12px 18px;
+    border-radius: 16px;
+
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(6px);
+
     z-index: 10;
 }
+
 .main-header {
     min-height: 220px;
     display: flex;
