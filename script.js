@@ -92,7 +92,7 @@ materialsCareText: "Игрушки можно стирать в машине и 
 materialsHandmadeTitle: "Ручная работа",
 materialsHandmadeText: "Каждая игрушка создаётся вручную с вниманием к деталям и аккуратной обработкой.",
 
-deliveryTitle: "Доставка",
+deliveryTitle: "🚚 Доставка",
 deliveryText1: "Отправляю заказы по всей Чехии любой удобной местной почтовой службой.",
 deliveryText2: "Также возможна доставка в другие европейские страны через DHL.",
 },
@@ -168,9 +168,9 @@ materialsQualityText: "Іграшки пов’язані з м’якої пл�
 materialsCareTitle: "Легкий догляд",
 materialsCareText: "Іграшки можна прати в машині та сушити в сушарці, тому за ними легко доглядати.",
 
-deliveryTitle: "Doručení",
-deliveryText1: "Zásilky po celé České republice odesílám prostřednictvím místní poštovní služby dle domluvy.",
-deliveryText2: "Doručení do dalších evropských zemí je možné přes DHL.",
+deliveryTitle: "🚚 Доставка",
+deliveryText1: "Відправляю замовлення по всій Чехії зручною місцевою поштовою службою.",
+deliveryText2: "Також можлива доставка до інших європейських країн через DHL.",
 },
 cz: {
 title: "Karina Ručně Háčkované Hračky 🧶",
@@ -245,7 +245,7 @@ materialsCareText: "Hračky lze prát v pračce a sušit v sušičce, takže pé
 materialsHandmadeTitle: "Ruční výroba",
 materialsHandmadeText: "Každá hračka je vyrobena ručně s důrazem na detail a pečlivé zpracování.",
 
-deliveryTitle: "Doručení",
+deliveryTitle: "🚚 Doručení",
 deliveryText1: "Zásilky po celé České republice odesílám prostřednictvím místní poštovní služby dle domluvy.",
 deliveryText2: "Doručení do dalších evropských zemí je možné přes DHL.",
 },
@@ -323,7 +323,7 @@ materialsCareText: "The toys can be machine washed and tumble dried, making them
 materialsHandmadeTitle: "Handmade",
 materialsHandmadeText: "Each toy is carefully handmade with attention to detail and neat finishing.",
 
-deliveryTitle: "Delivery",
+deliveryTitle: "🚚 Delivery",
 deliveryText1: "I ship across the Czech Republic using convenient local postal services.",
 deliveryText2: "Delivery to other European countries is available via DHL.",
 }
