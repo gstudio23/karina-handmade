@@ -21,29 +21,18 @@ body {
 /* ===================== */
 /* HEADER */
 /* ===================== */
-.logo-container {
-    position: absolute;
-    top: 20px;
-    left: 30px;
-    z-index: 3;
-    background: rgba(255,255,255,0.85);
-    padding: 10px 16px;
-    border-radius: 14px;
-    backdrop-filter: blur(6px);
-}
 
 .logo {
     position: absolute;
     top: 25px;
     left: 25px;
 
-    width: 90px;
+    width: 140px;   /* размер — можно менять */
     height: auto;
 
-    background: transparent !important;
-    z-index: 5;
+    background: transparent;
+    z-index: 10;
 }
-
 .main-header {
     min-height: 220px;
     display: flex;
@@ -62,11 +51,6 @@ body {
     position: absolute;
     inset: 0;
     background: rgba(0,0,0,0.45);
-}
-
-.main-header * {
-    position: relative;
-    z-index: 2;
 }
 
 .main-header h1 {
