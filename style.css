@@ -1022,16 +1022,6 @@ body.cart-open #scrollTopBtn {
     color: #8c7b6b;
 }
 
-.close-menu {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    border: none;
-    background: none;
-    font-size: 20px;
-    cursor: pointer;
-}
-
 /* overlay */
 
 .menu-overlay {
