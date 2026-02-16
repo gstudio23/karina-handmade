@@ -18,9 +18,7 @@ body {
     text-align: center;
 }
 
-/* ===================== */
-/* HEADER CLEAN RESET */
-/* ===================== */
+/* ================= HEADER ================= */
 
 .main-header {
     position: relative;
@@ -36,6 +34,7 @@ body {
     background: url("banner.jpeg") center/cover no-repeat;
     color: white;
     text-align: center;
+
     overflow: hidden;
 }
 
@@ -51,8 +50,7 @@ body {
 /* контент поверх затемнения */
 .main-header h1,
 .main-header p,
-.lang-switch,
-.burger {
+.lang-switch {
     position: relative;
     z-index: 2;
 }
@@ -60,6 +58,7 @@ body {
 /* заголовок */
 .main-header h1 {
     font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
     font-size: 44px;
     margin: 0;
     line-height: 1.2;
@@ -643,6 +642,19 @@ button:hover {
     cursor: pointer;
     z-index: 1100;
 }
+@media (max-width: 768px) {
+
+    .logo {
+        width: 200px;
+        top: 15px;
+        left: 15px;
+    }
+
+    .main-header {
+        padding-top: 160px;
+    }
+
+}
 }
 
 /* скрываем плавающие кнопки когда корзина открыта */
@@ -1064,14 +1076,16 @@ body.cart-open #scrollTopBtn {
 
 /* ===== LOGO ===== */
 
+
 .logo {
     position: absolute;
-
-    top: 25px;
+    top: 0px;
     left: 30px;
 
-    width: clamp(140px, 16vw, 280px);
+    width: clamp(260px, 28vw, 460px);  /* БОЛЬШЕ */
     height: auto;
 
     z-index: 5;
+
+    filter: brightness(1.2);
 }
