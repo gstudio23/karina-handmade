@@ -171,6 +171,8 @@ materialsQualityTitle: "Якісна пряжа",
 materialsQualityText: "Іграшки пов’язані з м’якої плюшевої пряжі (100% мікрополіестер). Матеріал приємний на дотик і чудово підходить для створення затишних іграшок.",
 materialsCareTitle: "Легкий догляд",
 materialsCareText: "Іграшки можна прати в машині та сушити в сушарці, тому за ними легко доглядати.",
+materialsHandmadeTitle: "Ручна робота",
+materialsHandmadeText: "Кожна іграшка створюється вручну з любов’ю та увагою до деталей. Це не масове виробництво, а індивідуальна робота.",
 
 deliveryTitle: "🚚 Доставка",
 deliveryText1: "Відправляю замовлення по всій Чехії зручною місцевою поштовою службою.",
@@ -681,8 +683,9 @@ function toggleMenu() {
     menu.classList.toggle("open");
     overlay.classList.toggle("active");
     burger.classList.toggle("active");
-    
+
     document.body.classList.toggle("menu-open");
+    document.body.classList.toggle("cart-open");
 
 }
 document.querySelectorAll('.side-menu a').forEach(link => {
@@ -717,3 +720,4 @@ document.addEventListener("DOMContentLoaded", function () {
         yearElement.textContent = new Date().getFullYear();
     }
 });
+
