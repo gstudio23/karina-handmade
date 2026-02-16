@@ -97,8 +97,12 @@ body {
     width: 100%;
     max-width: 300px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-    transition: 0.3s ease;
-    overflow: hidden;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.15);
 }
 
 /* изображение */
