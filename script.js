@@ -682,3 +682,14 @@ function toggleMenu() {
     overlay.classList.toggle("active");
     burger.classList.toggle("active");
 }
+
+// =====================
+// FOOTER YEAR
+// =====================
+
+document.addEventListener("DOMContentLoaded", function () {
+    const yearElement = document.getElementById("year");
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
+});
