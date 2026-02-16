@@ -105,21 +105,6 @@ body {
     transform: translateY(-6px);
 }
 
-/* затемнение картинки */
-.card::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0);
-    transition: 0.3s ease;
-    pointer-events: none;
-    border-radius: 18px;
-}
-
-.card:hover::after {
-    background: rgba(0,0,0,0.25);
-}
-
 /* изображение */
 .card img {
     width: 100%;
@@ -517,6 +502,48 @@ button:hover {
 .image-wrapper:hover .arrow {
     opacity: 1;
     pointer-events: auto;
+}
+
+/* ================= IMAGE DARK OVERLAY ================= */
+
+.image-wrapper {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+/* создаём слой затемнения */
+.image-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0);
+    transition: 0.3s ease;
+    z-index: 1;
+}
+
+/* затемняем ТОЛЬКО фото */
+.image-wrapper:hover::before {
+    background: rgba(0,0,0,0.35);
+}
+
+/* картинка ниже слоя затемнения */
+.image-wrapper img {
+    position: relative;
+    z-index: 0;
+}
+
+/* стрелки поверх затемнения */
+.image-wrapper .arrow {
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+/* стрелки появляются только при наведении */
+.image-wrapper:hover .arrow {
+    opacity: 1;
 }
 
 /* ===================== */
