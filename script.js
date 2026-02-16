@@ -82,7 +82,18 @@ orderMessage: "🧶 Новый заказ:",
 nameLabel: "Имя",
 phoneLabel: "Телефон",
 addressLabel: "Адрес",
-commentLabel: "Комментарий"
+commentLabel: "Комментарий",
+
+materialsTitle: "О материалах и качестве",
+
+materialsQualityTitle: "Качественная пряжа",
+materialsQualityText: "Игрушки связаны из мягкой плюшевой пряжи (100% микрополиэстер). Материал приятный на ощупь и идеально подходит для создания уютных игрушек.",
+
+materialsCareTitle: "Простой уход",
+materialsCareText: "Игрушки можно стирать в машине и сушить в сушилке, поэтому за ними легко ухаживать.",
+
+materialsHandmadeTitle: "Ручная работа",
+materialsHandmadeText: "Каждая игрушка создаётся вручную с вниманием к деталям и аккуратной обработкой."
 },
 
 ua: {
@@ -148,7 +159,18 @@ orderMessage: "🧶 Нове замовлення:",
 nameLabel: "Ім’я",
 phoneLabel: "Телефон",
 addressLabel: "Адреса",
-commentLabel: "Коментар"
+commentLabel: "Коментар",
+
+materialsTitle: "Про матеріали та якість",
+
+materialsQualityTitle: "Якісна пряжа",
+materialsQualityText: "Іграшки пов’язані з м’якої плюшевої пряжі (100% мікрополіестер). Матеріал приємний на дотик і чудово підходить для створення затишних іграшок.",
+
+materialsCareTitle: "Легкий догляд",
+materialsCareText: "Іграшки можна прати в машині та сушити в сушарці, тому за ними легко доглядати.",
+
+materialsHandmadeTitle: "Ручна робота",
+materialsHandmadeText: "Кожна іграшка створюється вручну з увагою до деталей та акуратною обробкою."
 },
 
 cz: {
@@ -214,7 +236,18 @@ orderMessage: "🧶 Nová objednávka:",
 nameLabel: "Jméno",
 phoneLabel: "Telefon",
 addressLabel: "Adresa",
-commentLabel: "Komentář"
+commentLabel: "Komentář",
+
+materialsTitle: "O materiálech a kvalitě",
+
+materialsQualityTitle: "Kvalitní příze",
+materialsQualityText: "Hračky jsou háčkované z měkké plyšové příze (100% mikropolyester). Materiál je příjemný na dotek a ideální pro výrobu útulných hraček.",
+
+materialsCareTitle: "Snadná údržba",
+materialsCareText: "Hračky lze prát v pračce a sušit v sušičce, takže péče je velmi jednoduchá.",
+
+materialsHandmadeTitle: "Ruční výroba",
+materialsHandmadeText: "Každá hračka je vyrobena ručně s důrazem na detail a pečlivé zpracování."
 },
 
 en: {
@@ -280,7 +313,18 @@ orderMessage: "🧶 New order:",
 nameLabel: "Name",
 phoneLabel: "Phone",
 addressLabel: "Address",
-commentLabel: "Comment"
+commentLabel: "Comment",
+
+materialsTitle: "Materials & Quality",
+
+materialsQualityTitle: "High-quality yarn",
+materialsQualityText: "The toys are made from soft plush yarn (100% micropolyester). The material is pleasant to the touch and perfect for cozy handmade toys.",
+
+materialsCareTitle: "Easy care",
+materialsCareText: "The toys can be machine washed and tumble dried, making them easy to care for.",
+
+materialsHandmadeTitle: "Handmade",
+materialsHandmadeText: "Each toy is carefully handmade with attention to detail and neat finishing."
 }
 }
 
