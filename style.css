@@ -19,7 +19,7 @@ body {
 }
 
 /* ===================== */
-/* HEADER */
+/* HEADER CLEAN RESET */
 /* ===================== */
 
 .main-header {
@@ -31,18 +31,15 @@ body {
     justify-content: center;
     align-items: center;
 
-    padding: 60px 20px 80px 20px;
+    padding: 120px 20px 80px 20px;
 
     background: url("banner.jpeg") center/cover no-repeat;
     color: white;
     text-align: center;
-
     overflow: hidden;
-    align-items: center;
-    justify-content: center;
 }
 
-/* затемнение баннера */
+/* затемнение */
 .main-header::before {
     content: "";
     position: absolute;
@@ -51,20 +48,6 @@ body {
     z-index: 0;
 }
 
-/* логотип */
-.logo {
-    position: absolute;
-    top: 15px;
-    left: 30px;
-
-    width: 340px;
-    height: auto;
-
-    z-index: 10;
-}
-.logo {
-    align-self: flex-start;
-}
 /* контент поверх затемнения */
 .main-header h1,
 .main-header p,
@@ -961,29 +944,24 @@ body.cart-open #scrollTopBtn {
     }
 }
 
-/* ================= BURGER ================= */
+/* ================= BURGER CLEAN ================= */
 
 .burger {
-    position: fixed;
-    top: 25px;
-    right: 25px;
+    position: absolute;   /* не fixed */
+    top: 30px;
+    right: 30px;
     width: 32px;
     cursor: pointer;
-    z-index: 6000;
-    transition: 0.3s ease;
+    z-index: 10;
 }
 
 .burger span {
     display: block;
     height: 3px;
-    background: #2d2d2d; /* темный */
+    background: white;   /* всегда белый на баннере */
     margin: 7px 0;
     border-radius: 3px;
     transition: 0.3s ease;
-}
-/* на баннере бургер белый */
-.main-header .burger span {
-    background: white;
 }
 
 .burger.active span:nth-child(1) {
@@ -997,9 +975,7 @@ body.cart-open #scrollTopBtn {
 .burger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -7px);
 }
-.burger.active span {
-    background: #2d2d2d;
-}
+
 /* ================= SIDE MENU ================= */
 
 .side-menu {
