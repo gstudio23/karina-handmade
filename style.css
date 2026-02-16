@@ -482,6 +482,44 @@ button:hover {
 }
 
 /* ===================== */
+/* HOVER EFFECT FOR GALLERY */
+/* ===================== */
+
+.image-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+/* затемнение */
+.image-wrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0);
+    transition: 0.3s ease;
+    border-radius: 14px;
+    pointer-events: none;
+}
+
+/* затемнение при наведении */
+.card:hover .image-wrapper::after {
+    background: rgba(0,0,0,0.25);
+}
+
+/* стрелки изначально скрыты */
+.image-wrapper .arrow {
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+/* показываем стрелки только при hover */
+.card:hover .image-wrapper .arrow {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* ===================== */
 /* MOBILE */
 /* ===================== */
 
