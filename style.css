@@ -1089,3 +1089,13 @@ body.cart-open #scrollTopBtn {
 
     filter: brightness(1.2);
 }
+
+@media (max-width: 768px) {
+
+    .logo {
+        width: 180px;      /* меньше */
+        top: 10px;         /* выше */
+        left: 15px;        /* левее */
+    }
+
+}
