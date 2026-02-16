@@ -1165,3 +1165,32 @@ body::before {
 .delivery {
     background: #efe6dc; /* твой бежевый */
 }
+
+@media (max-width: 768px) {
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;   /* можно 12px если будет тесно */
+    }
+
+    .card {
+        padding: 14px;   /* уменьшаем внутренние отступы */
+    }
+
+    .card img {
+        height: 220px;   /* чтобы не были слишком вытянутыми */
+    }
+
+    .card h2 {
+        font-size: 16px;
+    }
+
+    .card p {
+        font-size: 13px;
+    }
+
+    .price {
+        font-size: 14px;
+    }
+
+}
