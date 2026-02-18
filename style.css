@@ -510,11 +510,6 @@ button:hover {
     z-index: 1;
 }
 
-/* затемняем ТОЛЬКО фото */
-.image-wrapper:hover::before {
-    background: rgba(0,0,0,0.35);
-}
-
 /* картинка ниже слоя затемнения */
 .image-wrapper img {
     position: relative;
@@ -534,7 +529,7 @@ button:hover {
     opacity: 1;
 }
 
-/* ================= IMAGE HOVER CLEAN ================= */
+/* ===== CONTROLLED GALLERY EFFECT ===== */
 
 .image-wrapper {
     position: relative;
@@ -542,7 +537,7 @@ button:hover {
     overflow: hidden;
 }
 
-/* затемнение только фото */
+/* слой затемнения */
 .image-wrapper::before {
     content: "";
     position: absolute;
@@ -553,25 +548,24 @@ button:hover {
     pointer-events: none;
 }
 
-.image-wrapper:hover::before {
+/* затемнение ТОЛЬКО если есть галерея */
+.image-wrapper.has-gallery:hover::before {
     background: rgba(0,0,0,0.35);
 }
 
-.image-wrapper img {
-    display: block;
-    position: relative;
-    z-index: 0;
-}
-
+/* стрелки */
 .image-wrapper .arrow {
     position: absolute;
     z-index: 2;
     opacity: 0;
+    pointer-events: none;
     transition: 0.3s ease;
 }
 
-.image-wrapper:hover .arrow {
+/* стрелки появляются только если есть галерея */
+.image-wrapper.has-gallery:hover .arrow {
     opacity: 1;
+    pointer-events: auto;
 }
 
 
@@ -1307,4 +1301,54 @@ body::before {
 
 body.cart-open .burger {
     display: none;
+}
+/* ===== FROG ===== */
+
+.product-page {
+    max-width: 1200px;
+    margin: 100px auto;
+    display: flex;
+    gap: 80px;
+    padding: 0 40px;
+}
+
+.product-gallery {
+    flex: 1;
+}
+
+.product-gallery img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.thumbs {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.thumbs img {
+    width: 80px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.product-info {
+    flex: 1;
+    text-align: left;
+}
+
+.product-info h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.product-size {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.product-story {
+    margin-bottom: 30px;
+    line-height: 1.7;
 }

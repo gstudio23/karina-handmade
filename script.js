@@ -24,31 +24,47 @@ ru: {
 title: "Karina Handmade Toys 🧶",
 subtitle: "Теплые вязаные игрушки с любовью",
 frogTitle: "Лягушечка",
-frogDesc: "Мягкая вязаная лягушечка, 23 см.",
+frogSize: "Размер: ~ 20 см",
 sunflowerTitle: "Подсолнух",
-sunflowerDesc: "Весёлый подсолнух с глазками, 21 см.",
-turtleTitle: "Черепашка",
-turtleDesc: "Уютная черепашка, 15 см.",
+sunflowerSize: "Размер: ~ 21 см",
+turtleTreeTitle: "Черепашка Ёлочка",
+turtleTreeSize: "Размер: ~ 15 см",
+turtleSantaTitle: "Черепашка Санта-Клаус",
+turtleSantaSize: "Размер",
 tulipTitle: "Тюльпан",
-tulipDesc: "Вязаный тюльпан, 27 см.",
+tulipSize: "Размер: ~ 27 см",
 spiderTitle: "Паучок",
-spiderDesc: "Забавный паучок, 17 см.",
+spiderSize: "Размер: ~ 17 см",
 cowTitle: "Плюшевая коровка",
-cowDesc: "Большая мягкая коровка, 39 см.",
+cowSize: "Размер: ~ 39 см",
 pigTitle: "Свинка",
-pigDesc: "Высота 35 см. Мягкая свинка в стиле копилки.",
+pigSize: "Размер: ~ 35 см",
 balloonBearTitle: "Мишка с шариками",
 balloonBearDesc: "Персонализированная картина. На шариках можно написать имя.",
 snowmanTitle: "Снеговик",
-snowmanDesc: "Уютный зимний снеговик ручной работы.",
+snowmanSize: "Размер",
 babyBunnyTitle: "Зайчик для малышей",
-babyBunnyDesc: "Набиты только ручки, ножки и голова. Безопасный для малышей.",
+babyBunnySize: "Размер",
 bowBunnyTitle: "Зайчик с бантиками",
-bowBunnyDesc: "Милый зайчик с бантиками на ушках.",
+bowBunnySize: "Размер",
 beerTitle: "Вязаное пиво",
-beerDesc: "Высота 30 см. Возможны жёлтый, коричневый и зелёный цвета.",
+beerSize: "Размер",
 squirrelTitle: "Белочка",
-squirrelDesc: "Большая мягкая белочка, 56 см. Пушистая, уютная и идеально подходит для объятий.",
+squirrelSize: "Размер",
+dollTitle: "Кукла",
+dollSize: "Размер",
+deerTitle: "Оленёнок",
+deerSize: "Размер",
+gingerbreadTitle: "Имбирный пряник",
+gingerbreadSize: "Размер",
+wreathTitle: "Зимний веночек",
+wreathSize: "Размер",
+pumpkinTitle: "Тыковка",
+pumpkinSize: "Размер",
+miniTurtlesTitle: "Мини-черепашки",
+miniTurtlesSize: "Размер",
+octopusKeychainTitle: "Осьминожки-брелоки",
+octopusKeychainSize: "Размер",
 
 colors: {
 red: "Красный",
@@ -105,31 +121,47 @@ ua: {
 title: "Karina Handmade Toys 🧶",
 subtitle: "Теплі в’язані іграшки з любов’ю",
 frogTitle: "Жабка",
-frogDesc: "М’яка в’язана жабка, 23 см.",
+frogSize: "Розмір: ~ 20 см",
 sunflowerTitle: "Соняшник",
-sunflowerDesc: "Веселий соняшник з оченятами, 21 см.",
-turtleTitle: "Черепашка",
-turtleDesc: "Затишна черепашка, 15 см.",
+sunflowerSize: "Розмір: ~ 21 см",
+turtleTreeTitle: "Черепашка Ялинка",
+turtleTreeSize: "Розмір: ~ 15 см",
+turtleSantaTitle: "Черепашка Санта-Клаус",
+turtleSantaSize: "Розмір",
 tulipTitle: "Тюльпан",
-tulipDesc: "В’язаний тюльпан, 27 см.",
+tulipSize: "Розмір: ~ 27 см",
 spiderTitle: "Павучок",
-spiderDesc: "Кумедний павучок, 17 см.",
+spiderSize: "Розмір: ~ 17 см",
 cowTitle: "Плюшева корівка",
-cowDesc: "Велика м’яка корівка, 39 см.",
+cowSize: "Розмір: ~ 39 см",
 pigTitle: "Свинка",
-pigDesc: "Висота 35 см. М’яка свинка у стилі скарбнички.",
+pigSize: "Розмір: ~ 35 см",
 balloonBearTitle: "Ведмедик з кульками",
 balloonBearDesc: "Персоналізована картина.",
 snowmanTitle: "Сніговик",
-snowmanDesc: "Затишний зимовий сніговик ручної роботи.",
+snowmanSize: "Розмір",
 babyBunnyTitle: "Зайчик для малюків",
-babyBunnyDesc: "Наповнені лише ручки, ніжки та голова.",
+babyBunnySize: "Розмір",
 bowBunnyTitle: "Зайчик з бантиками",
-bowBunnyDesc: "Милий зайчик з бантиками.",
+bowBunnySize: "Розмір",
 beerTitle: "В’язане пиво",
-beerDesc: "Висота 30 см. Можливе в жовтому, коричневому та зеленому кольорах",
+beerSize: "Розмір",
 squirrelTitle: "Білочка",
-squirrelDesc: "Велика м’яка білочка, 56 см. Пухнаста, затишна та ідеальна для обіймів.",
+squirrelSize: "Розмір",
+dollTitle: "Лялька",
+dollSize: "Розмір",
+deerTitle: "Оленя",
+deerSize: "Розмір",
+gingerbreadTitle: "Імбирний пряник",
+gingerbreadSize: "Розмір",
+wreathTitle: "Зимовий віночок",
+wreathSize: "Розмір",
+pumpkinTitle: "Гарбузик",
+pumpkinSize: "Розмір",
+miniTurtlesTitle: "Міні-черепашки",
+miniTurtlesSize: "Розмір",
+octopusKeychainTitle: "Восьминіжки-брелоки",
+octopusKeychainSize: "Розмір",
 
 colors: {
 red: "Червоний",
@@ -187,31 +219,47 @@ cz: {
 title: "Karina Ručně Háčkované Hračky 🧶",
 subtitle: "Teplé háčkované hračky s láskou",
 frogTitle: "Žabka",
-frogDesc: "Měkká háčkovaná žabka, 23 cm.",
+frogSize: "Velikost: ~ 20 cm",
 sunflowerTitle: "Slunečnice",
-sunflowerDesc: "Veselá slunečnice s očima, 21 cm.",
-turtleTitle: "Želvička",
-turtleDesc: "Roztomilá želvička, 15 cm.",
+sunflowerSize: "Velikost: ~ 21 cm",
+turtleTreeTitle: "Želvička Stromek",
+turtleTreeSize: "Velikost: ~ 15 cm",
+turtleSantaTitle: "Želvička Santa Claus",
+turtleSantaSize: "Velikost",
 tulipTitle: "Tulipán",
-tulipDesc: "Háčkovaný tulipán, 27 cm.",
+tulipSize: "Velikost: ~ 27 cm",
 spiderTitle: "Pavouček",
-spiderDesc: "Roztomilý pavouček, 17 cm.",
+spiderSize: "Velikost: ~ 17 cm",
 cowTitle: "Plyšová kravička",
-cowDesc: "Velká měkká kravička, 39 cm.",
+cowSize: "Velikost: ~ 39 cm",
 pigTitle: "Prasátko",
-pigDesc: "Výška 35 cm. Měkké prasátko ve stylu pokladničky.",
+pigSize: "Velikost: ~ 35 cm",
 balloonBearTitle: "Medvídek s balónky",
 balloonBearDesc: "Personalizovaný obraz. Na balónky lze napsat jméno.",
 snowmanTitle: "Sněhulák",
-snowmanDesc: "Útulný zimní sněhulák ruční výroby.",
+snowmanSize: "Velikost",
 babyBunnyTitle: "Zajíček pro miminka",
-babyBunnyDesc: "Vyplněné pouze ruce, nohy a hlava. Bezpečný pro miminka.",
+babyBunnySize: "Velikost",
 bowBunnyTitle: "Zajíček s mašličkami",
-bowBunnyDesc: "Roztomilý zajíček s mašličkami na uších.",
+bowBunnySize: "Velikost",
 beerTitle: "Háčkované pivo",
-beerDesc: "Výška 30 cm. Dostupné barvy: žlutá, hnědá a zelená.",
+beerSize: "Velikost",
 squirrelTitle: "Veverka",
-squirrelDesc: "Velká měkká veverka, 56 cm. Nadýchaná, roztomilá a ideální na mazlení.",
+squirrelSize: "Velikost",
+dollTitle: "Panenka",
+dollSize: "Velikost",
+deerTitle: "Kolouch",
+deerSize: "Velikost",
+gingerbreadTitle: "Perníček",
+gingerbreadSize: "Velikost",
+wreathTitle: "Zimní věneček",
+wreathSize: "Velikost",
+pumpkinTitle: "Dýně",
+pumpkinSize: "Velikost",
+miniTurtlesTitle: "Mini želvičky",
+miniTurtlesSize: "Velikost",
+octopusKeychainTitle: "Chobotničky – přívěsky",
+octopusKeychainSize: "Velikost",
 
 colors: {
 red: "Červený",
@@ -269,31 +317,47 @@ en: {
 title: "Karina Handmade Crochet Toys 🧶",
 subtitle: "Cozy handmade crochet toys made with love",
 frogTitle: "Frog",
-frogDesc: "Soft crochet frog, 23 cm.",
+frogSize: "Size: ~ 20 cm",
 sunflowerTitle: "Sunflower",
-sunflowerDesc: "Cute sunflower with eyes, 21 cm.",
-turtleTitle: "Turtle",
-turtleDesc: "Adorable crochet turtle, 15 cm.",
+sunflowerSize: "Size: ~ 21 cm",
+turtleTreeTitle: "Christmas Turtle",
+turtleTreeSize: "Size: ~ 15 cm",
+turtleSantaTitle: "Santa Turtle",
+turtleSantaSize: "Size",
 tulipTitle: "Tulip",
-tulipDesc: "Handmade crochet tulip, 27 cm.",
+tulipSize: "Size: ~ 27 cm",
 spiderTitle: "Spider",
-spiderDesc: "Cute crochet spider, 17 cm.",
+spiderSize: "Size: ~ 17 cm",
 cowTitle: "Plush Cow",
-cowDesc: "Large soft plush cow, 39 cm.",
+cowSize: "Size: ~ 39 cm",
 pigTitle: "Pig",
-pigDesc: "Height 35 cm. Soft pig in piggy-bank style.",
+pigSize: "Size: ~ 35 cm",
 balloonBearTitle: "Bear with Balloons",
 balloonBearDesc: "Personalized artwork. You can add a name on the balloons.",
 snowmanTitle: "Snowman",
-snowmanDesc: "Cozy handmade winter snowman.",
+snowmanSize: "Size",
 babyBunnyTitle: "Baby Bunny",
-babyBunnyDesc: "Stuffed only in arms, legs and head. Safe for babies.",
+babyBunnySize: "Size",
 bowBunnyTitle: "Bow Bunny",
-bowBunnyDesc: "Cute bunny with bows on the ears.",
+bowBunnySize: "Size",
 beerTitle: "Crochet Beer",
-beerDesc: "Height 30 cm. Available in yellow, brown and green colors.",
+beerSize: "Size",
 squirrelTitle: "Squirrel",
-squirrelDesc: "Large soft squirrel, 56 cm tall. Fluffy, cozy and perfect for cuddles.",
+squirrelSize: "Size",
+dollTitle: "Doll",
+dollSize: "Size",
+deerTitle: "Fawn",
+deerSize: "Size",
+gingerbreadTitle: "Gingerbread",
+gingerbreadSize: "Size",
+wreathTitle: "Winter Wreath",
+wreathSize: "Size",
+pumpkinTitle: "Pumpkin",
+pumpkinSize: "Size",
+miniTurtlesTitle: "Mini Turtles",
+miniTurtlesSize: "Size",
+octopusKeychainTitle: "Octopus Keychains",
+octopusKeychainSize: "Size",
 
 colors: {
 red: "Red",
@@ -543,6 +607,12 @@ function checkout() {
 // =====================
 
 const galleries = {
+wreath: ["wreath1.jpeg", "wreath2.jpeg"],
+gingerbread: ["gingerbread1.jpeg", "gingerbread2.jpeg"],
+doll: ["doll1.jpeg", "doll2.jpeg"],
+reindeer: ["reindeer1.jpeg", "reindeer2.jpeg"],
+snowmanRed: ["snowman-red1.jpeg", "snowman-red2.jpeg"],
+turtleTree: ["turtle1.jpeg", "turtle2.jpeg"],
 cow: ["cow1.jpeg", "cow2.jpeg", "cow3.jpeg"],
 pig: ["pig1.jpeg", "pig2.jpeg"],
 balloonBear: ["balloon1.jpeg", "balloon2.jpeg"],
@@ -632,21 +702,61 @@ function prevImageGallery(event, galleryName, imgId) {
 
 function selectColor(element, productId, colorKey) {
 
-const parent = element.parentElement;
+    const parent = element.parentElement;
 
-parent.querySelectorAll(".color-circle")
-.forEach(circle => circle.classList.remove("active"));
+    parent.querySelectorAll(".color-circle")
+        .forEach(circle => circle.classList.remove("active"));
 
-element.classList.add("active");
+    element.classList.add("active");
 
-selectedOptions[productId] = colorKey;
+    selectedOptions[productId] = colorKey;
 
-const img = document.getElementById(productId + "-main");
+    const img = document.getElementById(productId + "-main");
+    if (!img) return;
 
-if (img) {
-img.src = productId + "-" + colorKey + ".jpeg";
+    // ===== ОСОБАЯ ЛОГИКА ДЛЯ СНЕГОВИКА =====
+
+    if (productId === "snowman") {
+
+        const wrapper = img.closest(".image-wrapper");
+        const arrows = wrapper.querySelectorAll(".arrow");
+
+        if (colorKey === "red") {
+
+            img.src = "snowman-red1.jpeg";
+
+            img.setAttribute(
+                "onclick",
+                "openLightbox('snowman-red1.jpeg','snowmanRed',0)"
+            );
+
+            // ✅ включаем галерею
+            wrapper.classList.add("has-gallery");
+
+            arrows.forEach(a => a.style.display = "flex");
+
+        } else {
+
+            img.src = "snowman-" + colorKey + ".jpeg";
+
+            img.setAttribute(
+                "onclick",
+                "openLightbox('" + img.src + "')"
+            );
+
+            // ❌ выключаем галерею
+            wrapper.classList.remove("has-gallery");
+
+            arrows.forEach(a => a.style.display = "none");
+        }
+
+        return;
+    }
+
+    // ===== ДЛЯ ВСЕХ ОСТАЛЬНЫХ ТОВАРОВ =====
+    img.src = productId + "-" + colorKey + ".jpeg";
 }
-}
+
 
 // =====================
 // SCROLL BUTTON

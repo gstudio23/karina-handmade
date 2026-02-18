@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Жабка</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="product-header">
+    <a href="index.html">← Назад</a>
+</header>
+
+<section class="product-page">
+
+    <div class="product-gallery">
+        <img src="frog.jpeg" id="frog-large">
+
+        <div class="thumbs">
+            <img src="frog.jpeg" onclick="changeImage(this.src)">
+            <img src="frog2.jpeg" onclick="changeImage(this.src)">
+        </div>
+    </div>
+
+    <div class="product-info">
+        <h1>Жабка</h1>
+
+        <p class="product-size">
+            Размер: около 20 см
+        </p>
+
+        <p class="product-story">
+            Говорят, эта Жабка появилась однажды тёплым летним вечером,
+            когда солнце почти коснулось воды и воздух стал золотым.
+
+            Она хранит в себе спокойствие тихих прудов,
+            шёпот камышей и мягкий свет заката.
+            Если прислушаться, кажется, будто она вот-вот моргнёт
+            и расскажет свою маленькую тайну.
+
+            Её сердце связано из мягкой пряжи,
+            но в нём живёт настоящее волшебство.
+            </p>
+
+        <p class="price">500 Kč</p>
+
+        <button onclick="addToCart('frog',500)">
+            Заказать
+        </button>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+<script>
+function changeImage(src){
+    document.getElementById("frog-large").src = src;
+}
+</script>
+
+</body>
+</html>
