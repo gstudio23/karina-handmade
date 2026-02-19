@@ -231,7 +231,7 @@ squirrelCareText: `• Игрушка связана из плюшевой пр�
                 • Не отбеливать. Не гладить.<br>
                 • Сушить естественным способом.`,
 squirrelProductionTitle: "Срок изготовления ✧",
-squirrelProductionText: "До 4 дней ручной работы в зависимости от загруженности.",
+squirrelProductionText: "До 7 дней ручной работы в зависимости от загруженности.",
 
 dollTitle: "Кукла",
 dollSize: "Размер: ~ 35 см",
@@ -546,7 +546,7 @@ squirrelCareText: `• Іграшка зв’язана з плюшевої пр
                 • Не відбілювати. Не прасувати.<br>
                 • Сушити природним способом.`,
 squirrelProductionTitle: "Термін виготовлення ✧",
-squirrelProductionText: "До 4 днів ручної роботи залежно від завантаженості.",
+squirrelProductionText: "До 7 днів ручної роботи залежно від завантаженості.",
 
 dollTitle: "Лялька",
 dollSize: "Розмір: ~ 35 см",
@@ -859,7 +859,7 @@ squirrelCareText: `• Vyrobeno z plyšové příze Alize Velluto.<br>
                     • Nebělit. Nežehlit.<br>
                     • Sušit přirozeně.`,
 squirrelProductionTitle: "Doba výroby ✧",
-squirrelProductionText: "Do 4 dnů ruční práce podle vytížení.",
+squirrelProductionText: "Do 7 dnů ruční práce podle vytížení.",
 
 dollTitle: "Panenka",
 dollSize: "Velikost: ~ 35 cm",
@@ -1171,7 +1171,7 @@ squirrelCareText: `• Made from plush yarn Alize Velluto.<br>
                     • Do not bleach. Do not iron.<br>
                     • Air dry only.`,
 squirrelProductionTitle: "Production time ✧",
-squirrelProductionText: "Up to 4 days of handmade work depending on workload.",
+squirrelProductionText: "Up to 7 days of handmade work depending on workload.",
 
 dollTitle: "Doll",
 dollSize: "Size: ~ 35 cm",
