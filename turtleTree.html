@@ -3,14 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Жабка</title>
+<title>Черепашка-Ёлочка</title>
+
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="product.css">
 </head>
 
 <body>
 
-<!-- ===== TOP STRIP BANNER ===== -->
+<!-- ===== HEADER (такой же как у жабки) ===== -->
 
 <header class="main-header">
 
@@ -26,8 +27,6 @@
 
 </header>
 
-<button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
-
 <!-- SIDE MENU -->
 
 <nav id="sideMenu" class="side-menu">
@@ -41,53 +40,55 @@
 <div class="menu-overlay" id="menuOverlay" onclick="toggleMenu()"></div>
 
 
-<!-- ===== СТРАНИЦА ТОВАРА ===== -->
+<!-- ===== PRODUCT PAGE ===== -->
 
 <section class="product-page">
 
     <!-- Галерея -->
     <div class="product-gallery">
 
-    <img src="frog.jpeg" class="main-image" id="mainImage">
+        <img src="turtle1.jpeg" class="main-image" id="mainImage">
 
-    <div class="product-thumbnails">
-        <img src="frog.jpeg" onclick="changeImage(this.src)">
+        <div class="product-thumbnails">
+            <img src="turtle1.jpeg" onclick="changeImage(this.src)">
+            <img src="turtle2.jpeg" onclick="changeImage(this.src)">
+        </div>
+
     </div>
-
-</div>
 
     <!-- Информация -->
     <div class="product-info">
 
-        <h1 data-i18n="frogTitle">Жабка</h1>
+        <h1 data-i18n="turtleTreeTitle">Черепашка-Ёлочка</h1>
 
-        <p class="product-size" data-i18n="frogSize">
-        Размер: ~ 20 см
+        <p class="product-size" data-i18n="turtleTreeSize">
+            Размер: ~ 15 см
         </p>
 
-        <p class="product-story" data-i18n="frogStory"></p>
+        <p class="product-story" data-i18n="turtleTreeStory"></p>
 
         <div class="product-care">
-           <h3 data-i18n="frogCareTitle"></h3>
-        <p data-i18n="frogCareText"></p>
+            <h3 data-i18n="turtleTreeCareTitle"></h3>
+            <p data-i18n="turtleTreeCareText"></p>
         </div>
 
         <div class="product-production">
-            <h3 data-i18n="frogProductionTitle"></h3>
-            <p data-i18n="frogProductionText"></p>
+            <h3 data-i18n="turtleTreeProductionTitle"></h3>
+            <p data-i18n="turtleTreeProductionText"></p>
         </div>
 
-        <p class="price">400 Kč</p>
+        <p class="price">450 Kč</p>
 
-        <button onclick="addToCart('frog',400)"
-        data-i18n="orderBtn">
+        <button onclick="addToCart('turtleTree',450)"
+                data-i18n="orderBtn">
         </button>
 
     </div>
 
 </section>
 
-<!-- ================= CART ================= -->
+
+<!-- ===== CART (копия как везде) ===== -->
 
 <div class="cart-icon" onclick="toggleCart()">
     🛒 <span id="cart-count">0</span>
@@ -114,16 +115,16 @@
         </p>
 
         <input type="text" id="customer-name"
-            data-i18n-placeholder="namePlaceholder">
+               data-i18n-placeholder="namePlaceholder">
 
         <input type="tel" id="customer-phone"
-            data-i18n-placeholder="phonePlaceholder">
+               data-i18n-placeholder="phonePlaceholder">
 
         <input type="text" id="customer-address"
-            data-i18n-placeholder="addressPlaceholder">
+               data-i18n-placeholder="addressPlaceholder">
 
         <textarea id="customer-comment"
-            data-i18n-placeholder="commentPlaceholder"></textarea>
+                  data-i18n-placeholder="commentPlaceholder"></textarea>
 
         <button onclick="clearCart()" data-i18n="clearCartBtn"></button>
         <button onclick="checkout()" data-i18n="checkoutBtn"></button>
@@ -135,7 +136,7 @@
 
 <script>
 function changeImage(src){
-    document.getElementById("frog-large").src = src;
+    document.getElementById("mainImage").src = src;
 }
 </script>
 

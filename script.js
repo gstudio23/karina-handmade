@@ -115,6 +115,60 @@ deliveryText2: "Также возможна доставка в другие е�
 menuAbout: "Обо мне",
 menuMaterials: "Материалы и качество",
 menuDelivery: "Доставка",
+
+
+frogStory: `Эта Лягушечка появилась однажды тёплым летним вечером,
+когда солнце почти коснулось воды, а воздух стал золотым.<br>
+В ней — спокойствие тихих прудов, мягкий шелест камышей и свет заката, который хочется запомнить.<br>
+Кажется, будто она вот-вот моргнёт и поделится своей маленькой тайной.
+Связанная из мягкой плюшевой пряжи, она хранит в себе настоящее тепло ручной работы.`,
+frogCareTitle: "Уход ✧",
+frogCareText: `• Игрушка связана из плюшевой пряжи Alize Velluto.<br>
+                • Бережная стирка при 30°C.<br>
+                • Не отбеливать. Не гладить.<br>
+                • Сушить естественным способом.`,
+frogProductionTitle: "Срок изготовления ✧",
+frogProductionText: "До 4 дней ручной работы.",
+
+sunflowerStory: `Этот Подсолнух словно хранит в себе частичку летнего солнца.
+Он тянется к свету и наполняет пространство теплом и спокойствием.<br>
+Его мягкие лепестки напоминают о тёплых днях, золотых полях и тихом ветре.<br>
+Связанный вручную, он станет уютным акцентом в интерьере или нежным подарком.`,
+sunflowerCareTitle: "Уход ✧",
+sunflowerCareText: `• Игрушка связана из плюшевой пряжи Alize Velluto.<br>
+                • Бережная стирка при 30°C.<br>
+                • Не отбеливать. Не гладить.<br>
+                • Сушить естественным способом.`,
+sunflowerProductionTitle: "Срок изготовления ✧",
+sunflowerProductionText: "До 4 дней ручной работы.",
+
+turtleTreeTitle: "Черепашка-Ёлочка",
+turtleTreeSize: "Размер: ~ 15 см",
+turtleTreeStory:`Эта черепашка появилась в самый тихий зимний вечер.<br>
+Её панцирь похож на маленькую ёлочку — словно она хранит внутри свет гирлянд и запах хвои.<br>
+Она неторопливая, спокойная и немного мечтательная.<br>
+Любит тёплые пледы, мягкий свет лампы и долгие зимние вечера.<br>
+Каждая деталь связана вручную — аккуратно и с любовью, чтобы она стала не просто игрушкой, а маленьким хранителем уюта.`,
+turtleTreeCareTitle: "Уход ✧",
+turtleTreeCareText:`• Игрушка связана из плюшевой пряжи Alize Velluto.<br>
+                    • Бережная стирка при 30°C.<br>
+                    • Не отбеливать. Не гладить.<br>
+                    • Сушить естественным способом.`,
+turtleTreeProductionTitle: "Срок изготовления ✧",
+turtleTreeProductionText: "До 4 дней ручной работы.",
+
+turtleSantaTitle: "Черепашка Санта-Клаус",
+turtleSantaSize: "Размер: ~ 18 см",
+turtleSantaStory: `Маленькая черепашка однажды решила стать помощницей Санты.<br>
+Теперь она путешествует по домам, принося уют и дух Рождества.<br>
+На её панцире живёт праздник — и он длится круглый год.`,
+turtleSantaCareTitle: "Уход ✧",
+turtleSantaCareText: `• Игрушка связана из плюшевой пряжи Alize Velluto.<br>
+                    • Бережная стирка при 30°C.<br>
+                    • Не отбеливать. Не гладить.<br>
+                    • Сушить естественным способом.`,
+turtleSantaProductionTitle: "Срок изготовления ✧",
+turtleSantaProductionText: "До 4 дней ручной работы.",
 },
 
 ua: {
@@ -213,6 +267,63 @@ deliveryText2: "Також можлива доставка до інших єв�
 menuAbout: "Про мене",
 menuMaterials: "Матеріали та якість",
 menuDelivery: "Доставка",
+
+
+
+frogStory: `Ця Жабка з’явилася одного теплого літнього вечора,
+коли сонце майже торкнулося води, а повітря стало золотим.<br>
+У ній — спокій тихих ставків, м’який шелест очерету та світло заходу сонця, яке хочеться запам’ятати.<br>
+Здається, ніби вона ось-ось моргне й поділиться своєю маленькою таємницею.
+Зв’язана з м’якої плюшевої пряжі, вона зберігає справжнє тепло ручної роботи.`,
+frogCareTitle: "Догляд ✧",
+frogCareText: `• Іграшка зв’язана з плюшевої пряжі Alize Velluto.<br>
+               • Прати при 30°C.<br>
+               • Не відбілювати. Не прасувати.<br>
+               • Сушити природним способом.`,
+frogProductionTitle: "Термін виготовлення ✧",
+frogProductionText: "До 4 днів ручної роботи.",
+
+sunflowerStory: `Цей Соняшник ніби зберігає в собі частинку літнього сонця.
+Він тягнеться до світла та наповнює простір теплом і спокоєм.<br>
+Його м’які пелюстки нагадують про теплі дні, золоті поля та тихий вітер.<br>
+Зв’язаний вручну, він стане затишним акцентом в інтер’єрі або ніжним подарунком.`,
+sunflowerCareTitle: "Догляд ✧",
+sunflowerCareText: `• Іграшка зв’язана з плюшевої пряжі Alize Velluto.<br>
+                    • Прати при 30°C.<br>
+                    • Не відбілювати. Не прасувати.<br>
+                    • Сушити природним способом.`,
+sunflowerProductionTitle: "Термін виготовлення ✧",
+sunflowerProductionText: "До 4 днів ручної роботи.",
+
+turtleTreeTitle: "Черепашка-Ялинка",
+turtleTreeSize: "Розмір: ~ 15 см",
+turtleTreeStory: `Ця черепашка народилася тихого зимового вечора.
+Її панцир нагадує маленьку ялинку — ніби вона зберігає всередині світло гірлянд і аромат хвої.<br>
+Вона спокійна, некваплива і трохи мрійлива.<br>
+Любить теплі пледи, м’яке світло лампи та затишні зимові вечори.<br>
+Усі деталі створені вручну — дбайливо і з любов’ю, щоб вона стала не просто іграшкою, а маленьким охоронцем затишку.`,
+turtleTreeCareTitle: "Догляд ✧",
+turtleTreeCareText: `• Іграшка зв’язана з плюшевої пряжі Alize Velluto.<br>
+                    • Прати при 30°C.<br>
+                    • Не відбілювати. Не прасувати.<br>
+                    • Сушити природним способом.`,
+turtleTreeProductionTitle: "Термін виготовлення ✧",
+turtleTreeProductionText: "До 4 днів ручної роботи.",
+
+
+turtleSantaTitle: "Черепашка Санта-Клаус",
+turtleSantaSize: "Розмір: ~ 18 см",
+turtleSantaStory: `Маленька черепашка одного разу вирішила стати помічницею Санти.<br> 
+Тепер вона мандрує домівками, приносячи затишок і різдвяний настрій.<br>
+На її панцирі живе свято — і воно триває цілий рік.`,
+turtleSantaCareTitle: "Догляд ✧",
+turtleSantaCareText: `• Іграшка зв’язана з плюшевої пряжі Alize Velluto.<br>
+                    • Прати при 30°C.<br>
+                    • Не відбілювати. Не прасувати.<br>
+                    • Сушити природним способом.`,
+turtleSantaProductionTitle: "Термін виготовлення ✧",
+turtleSantaProductionText: "До 4 днів ручної роботи.",
+
 },
 
 cz: {
@@ -311,6 +422,60 @@ deliveryText2: "Doručení do dalších evropských zemí je možné přes DHL."
 menuAbout: "O mně",
 menuMaterials: "Materiály a kvalita",
 menuDelivery: "Doručení",
+
+
+frogStory: `Tato žabička vznikla jednoho teplého letního večera,
+když se slunce téměř dotklo vody a vzduch měl zlatý odstín.<br>
+Nese v sobě klid tichých rybníků, jemné šustění rákosí a světlo zapadajícího slunce, které si chcete zapamatovat.<br>
+Jako by každou chvíli měla mrknout a prozradit své malé tajemství.
+Je uháčkovaná z měkké plyšové příze a ukrývá opravdové teplo ruční práce.`,
+frogCareTitle: "Péče ✧",
+frogCareText: `• Vyrobeno z plyšové příze Alize Velluto.<br>
+               • Prát při 30°C.<br>
+               • Nebělit. Nežehlit.<br>
+               • Sušit přirozeně.`,
+frogProductionTitle: "Doba výroby ✧",
+frogProductionText: "Až 4 dny ruční práce.",
+
+sunflowerStory: `Tato Slunečnice v sobě nese kousek letního slunce.
+Otočená ke světlu přináší do prostoru teplo a klid.<br>
+Její měkké okvětní lístky připomínají zlatá pole a hřejivé letní dny.<br>
+Ručně háčkovaná se stane jemným dekorativním prvkem nebo krásným dárkem.`,
+sunflowerCareTitle: "Péče ✧",
+sunflowerCareText: `• Vyrobeno z plyšové příze Alize Velluto.<br>
+                    • Prát při 30°C.<br>
+                    • Nebělit. Nežehlit.<br>
+                    • Sušit přirozeně.`,
+sunflowerProductionTitle: "Doba výroby ✧",
+sunflowerProductionText: "Do 4 dnů ruční práce.",
+
+turtleTreeTitle: "Želvička-Stromeček",
+turtleTreeSize: "Velikost: ~ 15 cm",
+turtleTreeStory: `Tato želvička se narodila během tichého zimního večera.<br>
+Její krunýř připomíná malý vánoční stromek — jako by v sobě nesla světlo řetězů a vůni jehličí.<br>
+Je klidná, nikam nespěchá a trochu sní.<br>
+Miluje teplé deky, jemné světlo lampy a dlouhé zimní večery.<br>
+Každý detail je vytvořen ručně s péčí a láskou — aby nebyla jen hračkou, ale malým strážcem útulnosti.`,
+turtleTreeCareTitle: "Péče ✧",
+turtleTreeCareText: `• Vyrobeno z plyšové příze Alize Velluto.<br>
+                    • Prát při 30°C.<br>
+                    • Nebělit. Nežehlit.<br>
+                    • Sušit přirozeně.`,
+turtleTreeProductionTitle: "Doba výroby ✧",
+turtleTreeProductionText: "Do 4 dnů ruční práce.",
+
+turtleSantaTitle: "Želvička Santa Claus",
+turtleSantaSize: "Velikost: ~ 18 cm",
+turtleSantaStory: `Jednoho dne se malá želvička rozhodla stát pomocnicí Santy.<br>
+Teď putuje z domu do domu a přináší útulnost a vánoční atmosféru.<br>
+Na jejím krunýři žije svátek — a trvá po celý rok.`,
+turtleSantaCareTitle: "Péče ✧",
+turtleSantaCareText: `• Vyrobeno z plyšové příze Alize Velluto.<br>
+                    • Prát při 30°C.<br>
+                    • Nebělit. Nežehlit.<br>
+                    • Sušit přirozeně.`,
+turtleSantaProductionTitle: "Doba výroby ✧",
+turtleSantaProductionText: "Do 4 dnů ruční práce.",
 },
 
 en: {
@@ -409,6 +574,60 @@ deliveryText2: "Delivery to other European countries is available via DHL.",
 menuAbout: "About",
 menuMaterials: "Materials & Quality",
 menuDelivery: "Delivery",
+
+
+frogStory: `This little frog appeared on a warm summer evening,
+when the sun nearly touched the water and the air turned golden.<br>
+She carries the calm of quiet ponds, the soft whisper of reeds, and the glow of sunset you wish could last a little longer.<br>
+It feels as if she might blink at any moment and share her tiny secret.
+Made from soft plush yarn, she holds the true warmth of handmade craft.`,
+frogCareTitle: "Care ✧",
+frogCareText: `• Made from plush yarn Alize Velluto.<br>
+               • Wash at 30°C.<br>
+               • Do not bleach. Do not iron.<br>
+               • Air dry only.`,
+frogProductionTitle: "Production time ✧",
+frogProductionText: "Up to 4 days of handmade work.",
+
+sunflowerStory: `This Sunflower carries a piece of summer sunshine within it.
+Turning gently toward the light, it brings warmth and calm into any space.<br>
+Its soft petals remind of golden fields and warm summer days.<br>
+Handmade with care, it becomes a cozy decorative piece or a thoughtful gift.`,
+sunflowerCareTitle: "Care ✧",
+sunflowerCareText: `• Made from plush yarn Alize Velluto.<br>
+                    • Wash at 30°C.<br>
+                    • Do not bleach. Do not iron.<br>
+                    • Air dry only.`,
+sunflowerProductionTitle: "Production time ✧",
+sunflowerProductionText: "Up to 4 days of handmade work.",
+
+turtleTreeTitle: "Christmas Turtle",
+turtleTreeSize: "Size: ~ 15 cm",
+turtleTreeStory: `This little turtle was born on a quiet winter evening.<br>
+Her shell looks like a tiny Christmas tree — as if she carries the soft glow of fairy lights and the scent of pine within her.<br>
+She is calm, unhurried, and slightly dreamy.<br>
+She loves warm blankets, soft lamp light, and peaceful winter evenings.<br>
+Every detail is handmade with care and love — so she becomes more than just a toy, but a small guardian of coziness.`,
+turtleTreeCareTitle: "Care ✧",
+turtleTreeCareText: `• Made from plush yarn Alize Velluto.<br>
+                    • Wash at 30°C.<br>
+                    • Do not bleach. Do not iron.<br>
+                    • Air dry only.`,
+turtleTreeProductionTitle: "Production time ✧",
+turtleTreeProductionText: "Up to 4 days of handmade work.",
+
+turtleSantaTitle: "Santa Turtle",
+turtleSantaSize: "Size: ~ 18 cm",
+turtleSantaStory: `One day, a little turtle decided to become Santa’s helper.<br>
+Now she travels from home to home, bringing coziness and the spirit of Christmas.<br>
+A little celebration lives on her shell — and it lasts all year long.`,
+turtleSantaCareTitle: "Care ✧",
+turtleSantaCareText: `• Made from plush yarn Alize Velluto.<br>
+                    • Wash at 30°C.<br>
+                    • Do not bleach. Do not iron.<br>
+                    • Air dry only.`,
+turtleSantaProductionTitle: "Production time ✧",
+turtleSantaProductionText: "Up to 4 days of handmade work.",
 }
 }
 
@@ -421,7 +640,7 @@ function setLanguage(lang) {
 document.querySelectorAll("[data-i18n]").forEach(el => {
 const key = el.getAttribute("data-i18n");
 if (translations[lang][key]) {
-el.textContent = translations[lang][key];
+el.innerHTML = translations[lang][key];;
 }
 });
 
@@ -793,31 +1012,42 @@ function toggleMenu() {
     menu.classList.toggle("open");
     overlay.classList.toggle("active");
     burger.classList.toggle("active");
-
     document.body.classList.toggle("menu-open");
 }
 
 
 document.querySelectorAll('.side-menu a').forEach(link => {
     link.addEventListener('click', function(e) {
-        e.preventDefault();
 
-        const id = this.getAttribute('href').substring(1);
-        const section = document.getElementById(id);
+        const href = this.getAttribute('href');
 
-        if (!section) return;
+        // Если ссылка ведёт на другую страницу — не мешаем браузеру
+        if (href.includes("index.html")) {
+            return;
+        }
 
-        const sectionHeight = section.offsetHeight;
-        const windowHeight = window.innerHeight;
+        // Только для внутренних якорей типа #about
+        if (href.startsWith("#")) {
 
-        const offset = section.offsetTop - (windowHeight / 2) + (sectionHeight / 2);
+            e.preventDefault();
 
-        window.scrollTo({
-            top: offset,
-            behavior: "smooth"
-        });
+            const id = href.substring(1);
+            const section = document.getElementById(id);
 
-        toggleMenu();
+            if (!section) return;
+
+            const sectionHeight = section.offsetHeight;
+            const windowHeight = window.innerHeight;
+
+            const offset = section.offsetTop - (windowHeight / 2) + (sectionHeight / 2);
+
+            window.scrollTo({
+                top: offset,
+                behavior: "smooth"
+            });
+
+            toggleMenu();
+        }
     });
 });
 // =====================

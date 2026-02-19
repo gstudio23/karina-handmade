@@ -1,0 +1,141 @@
+/* ================================= */
+/* PRODUCT PAGE ONLY (SAFE VERSION) */
+/* ================================= */
+
+.product-page {
+    max-width: 1200px;
+    margin: 80px auto;
+    display: flex;
+    gap: 80px;
+    padding: 0 40px;
+    align-items: flex-start;
+}
+
+/* ===== LEFT SIDE (GALLERY) ===== */
+
+.product-gallery {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-gallery .main-image {
+    width: 100%;
+    aspect-ratio: 3 / 4;   /* одинаковая пропорция */
+    object-fit: cover;     /* аккуратно обрезает */
+    border-radius: 20px;
+}
+
+/* thumbnails */
+
+.product-thumbnails {
+    display: flex;
+    gap: 15px;
+}
+
+.product-thumbnails img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.2s ease;
+}
+
+.product-thumbnails img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* ===== RIGHT SIDE (INFO) ===== */
+
+.product-info {
+    flex: 1;
+    max-width: 520px;
+    position: relative;
+    text-align: left;
+}
+
+/* мягкая подложка */
+.product-info::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    bottom: -20px;
+    left: -40px;
+    right: -40px;
+    background: linear-gradient(
+        to right,
+        rgba(248,240,232,0.9),
+        rgba(248,240,232,0.75),
+        rgba(248,240,232,0.9)
+    );
+    z-index: -1;
+}
+
+/* typography */
+
+.product-info h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.product-size {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.product-story {
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.product-care,
+.product-production {
+    margin-bottom: 25px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 25px 0 15px 0;
+    color: #8c7b6b;
+}
+
+.product-info button {
+    padding: 12px 26px;
+    font-size: 15px;
+    border-radius: 14px;
+    background: #c9b6a4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.product-info button:hover {
+    background: #b7a18e;
+    transform: translateY(-2px);
+}
+
+
+/* ================================= */
+/* RESPONSIVE */
+/* ================================= */
+
+@media (max-width: 900px) {
+
+    .product-page {
+        flex-direction: column;
+        gap: 40px;
+        margin: 50px auto;
+    }
+
+    .product-info::before {
+        left: -20px;
+        right: -20px;
+    }
+}

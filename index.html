@@ -57,24 +57,29 @@
 
         <p class="size" data-i18n="frogSize">Размер: ~ 20 см</p>
 
-        <p class="price">450 Kč</p>
+        <p class="price">400 Kč</p>
 
-        <button onclick="event.stopPropagation(); addToCart('frog',500)"
+        <button onclick="event.stopPropagation(); addToCart('frog',400)"
             data-i18n="orderBtn">
         </button>
     </article>
 
     <!-- ПОДСОЛНУХ -->
-    <article class="card">
+    <article class="card"
+         onclick="window.location.href='sunflower.html'"
+         style="cursor:pointer;">
+
         <img src="sunflower.jpeg" onclick="openLightbox(this.src)">
         <h2 data-i18n="sunflowerTitle">Подсолнух</h2>
         <p class="size" data-i18n="sunflowerSize">Размер: ~ 21 см</p>
-        <p class="price">350 Kč</p>
-        <button onclick="addToCart('sunflower',350)" data-i18n="orderBtn">Заказать</button>
+        <p class="price">400 Kč</p>
+        <button onclick="addToCart('sunflower',400)" data-i18n="orderBtn">Заказать</button>
     </article>
 
     <!-- ЧЕРЕПАШКА ЁЛОЧКА -->
-    <article class="card">
+    <article class="card"
+    onclick="window.location.href='turtleTree.html'"
+    style="cursor:pointer;">
 
         <div class="image-wrapper has-gallery">
             <img id="turtleTree-main"
@@ -99,7 +104,9 @@
 
     
     <!-- ЧЕРЕПАШКА САНТА -->
-    <article class="card">
+    <article class="card"
+    onclick="window.location.href='turtleSanta.html'"
+    style="cursor:pointer;">
 
         <div class="image-wrapper">
             <img id="turtleSanta-main"
@@ -111,9 +118,9 @@
 
         <p data-i18n="turtleSantaSize">Размер</p>
 
-        <p class="price">___ Kč</p>
+        <p class="price">400 Kč</p>
 
-        <button onclick="addToCart('turtleSanta', ___)"
+        <button onclick="addToCart('turtleSanta', 400)"
                 data-i18n="orderBtn"></button>
 
     </article>
@@ -263,8 +270,8 @@
         <img src="baby-bunny.jpeg" onclick="openLightbox(this.src)">
         <h2 data-i18n="babyBunnyTitle"></h2>
         <p data-i18n="babyBunnySize"></p>
-        <p class="price">300 Kč</p>
-        <button onclick="addToCart('babyBunny',300)" data-i18n="orderBtn"></button>
+        <p class="price">350 Kč</p>
+        <button onclick="addToCart('babyBunny',350)" data-i18n="orderBtn"></button>
     </article>
 
     <!-- ЗАЙЧИК С БАНТИКАМИ -->
@@ -278,7 +285,7 @@
 
         <h2 data-i18n="bowBunnyTitle">Зайчик с бантиками</h2>
         <p data-i18n="bowBunnySize"></p>
-        <p class="price">650 Kč</p>
+        <p class="price">550 Kč</p>
 
         <div class="color-picker">
             <span class="color-circle active"
@@ -290,7 +297,7 @@
                 onclick="selectColor(this,'bowBunny','pink')"></span>
         </div>
 
-        <button onclick="addToCart('bowBunny',650)"
+        <button onclick="addToCart('bowBunny',550)"
             data-i18n="orderBtn"></button>
 
     </article>
@@ -371,9 +378,9 @@
 
         <h2 data-i18n="deerTitle">Оленёнок</h2>
         <p data-i18n="deerSize"></p>
-        <p class="price">850 Kč</p>
+        <p class="price">300 Kč</p>
 
-        <button onclick="addToCart('reindeer',850)" data-i18n="orderBtn"></button>
+        <button onclick="addToCart('reindeer',300)" data-i18n="orderBtn"></button>
     </article>
 
     <!-- ИМБИРНЫЙ ПРЯНИК -->
@@ -391,9 +398,9 @@
 
         <h2 data-i18n="gingerbreadTitle">Имбирный пряник</h2>
         <p data-i18n="gingerbreadSize"></p>
-        <p class="price">550 Kč</p>
+        <p class="price">250 Kč</p>
 
-        <button onclick="addToCart('gingerbread',550)" data-i18n="orderBtn"></button>
+        <button onclick="addToCart('gingerbread',250)" data-i18n="orderBtn"></button>
     </article>
     
     <!-- ЗИМНИЙ ВЕНОК -->
@@ -411,9 +418,9 @@
 
         <h2 data-i18n="wreathTitle">Зимний веночек</h2>
         <p data-i18n="wreathSize"></p>
-        <p class="price">700 Kč</p>
+        <p class="price">250 Kč</p>
 
-        <button onclick="addToCart('wreath',700)" data-i18n="orderBtn"></button>
+        <button onclick="addToCart('wreath',250)" data-i18n="orderBtn"></button>
     </article>
 
     <!-- ТЫКОВКА -->
@@ -421,8 +428,8 @@
         <img src="pumpkin.jpeg" onclick="openLightbox(this.src)">
         <h2 data-i18n="pumpkinTitle">Тыковка</h2>
         <p data-i18n="pumpkinSize"></p>
-        <p class="price">300 Kč</p>
-        <button onclick="addToCart('pumpkin',300)" data-i18n="orderBtn"></button>
+        <p class="price">150 Kč</p>
+        <button onclick="addToCart('pumpkin',150)" data-i18n="orderBtn"></button>
     </article>
 
     <!-- МИНИ-ЧЕРЕПАШКИ -->
@@ -436,7 +443,7 @@
 
         <h2 data-i18n="miniTurtlesTitle">Мини-черепашки</h2>
         <p data-i18n="miniTurtlesSize"></p>
-        <p class="price">350 Kč</p>
+        <p class="price">250 Kč</p>
 
         <div class="color-picker">
 
@@ -460,7 +467,7 @@
 
         </div>
 
-        <button onclick="addToCart('miniTurtles',350)"
+        <button onclick="addToCart('miniTurtles',250)"
             data-i18n="orderBtn">Заказать</button>
 
     </article>
@@ -470,8 +477,8 @@
         <img src="octopus.jpeg" onclick="openLightbox(this.src)">
         <h2 data-i18n="octopusKeychainTitle">Осьминожки-брелоки</h2>
         <p data-i18n="octopusKeychainSize"></p>
-        <p class="price">200 Kč</p>
-        <button onclick="addToCart('octopus',200)" data-i18n="orderBtn"></button>
+        <p class="price">80 Kč</p>
+        <button onclick="addToCart('octopus',80)" data-i18n="orderBtn"></button>
     </article>
 
 </section>

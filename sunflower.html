@@ -3,14 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Жабка</title>
+<title>Подсолнух</title>
+
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="product.css">
 </head>
 
 <body>
 
-<!-- ===== TOP STRIP BANNER ===== -->
+<!-- ===== HEADER ===== -->
 
 <header class="main-header">
 
@@ -26,8 +27,6 @@
 
 </header>
 
-<button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
-
 <!-- SIDE MENU -->
 
 <nav id="sideMenu" class="side-menu">
@@ -41,51 +40,52 @@
 <div class="menu-overlay" id="menuOverlay" onclick="toggleMenu()"></div>
 
 
-<!-- ===== СТРАНИЦА ТОВАРА ===== -->
+<!-- ===== PRODUCT PAGE ===== -->
 
 <section class="product-page">
 
-    <!-- Галерея -->
+    <!-- ГАЛЕРЕЯ -->
     <div class="product-gallery">
 
-    <img src="frog.jpeg" class="main-image" id="mainImage">
+        <img src="sunflower.jpeg" class="main-image" id="mainImage">
 
-    <div class="product-thumbnails">
-        <img src="frog.jpeg" onclick="changeImage(this.src)">
+        <div class="product-thumbnails">
+            <img src="sunflower.jpeg" onclick="changeImage(this.src)">
+        </div>
+
     </div>
 
-</div>
-
-    <!-- Информация -->
+    <!-- ИНФОРМАЦИЯ -->
     <div class="product-info">
 
-        <h1 data-i18n="frogTitle">Жабка</h1>
+        <h1 data-i18n="sunflowerTitle">Подсолнух</h1>
 
-        <p class="product-size" data-i18n="frogSize">
-        Размер: ~ 20 см
+        <p class="product-size" data-i18n="sunflowerSize">
+            Размер: ~ 21 см
         </p>
 
-        <p class="product-story" data-i18n="frogStory"></p>
+        <p class="product-story" data-i18n="sunflowerStory"></p>
 
         <div class="product-care">
-           <h3 data-i18n="frogCareTitle"></h3>
-        <p data-i18n="frogCareText"></p>
+            <h3 data-i18n="sunflowerCareTitle"></h3>
+            <p data-i18n="sunflowerCareText"></p>
         </div>
 
         <div class="product-production">
-            <h3 data-i18n="frogProductionTitle"></h3>
-            <p data-i18n="frogProductionText"></p>
+            <h3 data-i18n="sunflowerProductionTitle"></h3>
+            <p data-i18n="sunflowerProductionText"></p>
         </div>
 
         <p class="price">400 Kč</p>
 
-        <button onclick="addToCart('frog',400)"
-        data-i18n="orderBtn">
+        <button onclick="addToCart('sunflower',400)"
+                data-i18n="orderBtn">
         </button>
 
     </div>
 
 </section>
+
 
 <!-- ================= CART ================= -->
 
@@ -114,16 +114,16 @@
         </p>
 
         <input type="text" id="customer-name"
-            data-i18n-placeholder="namePlaceholder">
+               data-i18n-placeholder="namePlaceholder">
 
         <input type="tel" id="customer-phone"
-            data-i18n-placeholder="phonePlaceholder">
+               data-i18n-placeholder="phonePlaceholder">
 
         <input type="text" id="customer-address"
-            data-i18n-placeholder="addressPlaceholder">
+               data-i18n-placeholder="addressPlaceholder">
 
         <textarea id="customer-comment"
-            data-i18n-placeholder="commentPlaceholder"></textarea>
+                  data-i18n-placeholder="commentPlaceholder"></textarea>
 
         <button onclick="clearCart()" data-i18n="clearCartBtn"></button>
         <button onclick="checkout()" data-i18n="checkoutBtn"></button>
@@ -131,11 +131,12 @@
     </div>
 </aside>
 
+
 <script src="script.js"></script>
 
 <script>
 function changeImage(src){
-    document.getElementById("frog-large").src = src;
+    document.getElementById("mainImage").src = src;
 }
 </script>
 
