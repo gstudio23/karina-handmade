@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Тюльпан</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+
+<header class="main-header">
+
+    <a href="index.html">
+        <img src="logo.png" class="logo" alt="Logo">
+    </a>
+
+    <div class="burger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+</header>
+
+<nav id="sideMenu" class="side-menu">
+    <a href="index.html#about" data-i18n="menuAbout"></a>
+    <a href="index.html#materials" data-i18n="menuMaterials"></a>
+    <a href="index.html#delivery" data-i18n="menuDelivery"></a>
+</nav>
+
+<div class="menu-overlay" id="menuOverlay" onclick="toggleMenu()"></div>
+
+<section class="product-page">
+
+    <!-- ГАЛЕРЕЯ -->
+    <div class="product-gallery">
+
+        <img src="tulip-red.jpeg" class="main-image" id="tulip-main">
+
+        <div class="product-thumbnails">
+            <img src="tulip-red.jpeg" onclick="changeImage(this.src)">
+        </div>
+
+
+
+        <!-- ВЫБОР ЦВЕТА -->
+        <div class="color-picker">
+
+            <span class="color-circle active"
+                style="background:#d63c3c"
+                onclick="selectColor(this,'tulip','red')"></span>
+
+            <span class="color-circle"
+                style="background:#c79be7"
+                onclick="selectColor(this,'tulip','lavender')"></span>
+
+            <span class="color-circle"
+                style="background:#f5a6c8"
+                onclick="selectColor(this,'tulip','pink')"></span>
+
+            <span class="color-circle"
+                style="background:#f6d24a"
+                onclick="selectColor(this,'tulip','yellow')"></span>
+
+        </div>
+
+    </div>
+
+    <!-- ИНФОРМАЦИЯ -->
+    <div class="product-info">
+
+        <h1 data-i18n="tulipTitle"></h1>
+
+        <p class="product-size" data-i18n="tulipSize"></p>
+
+        <p class="product-story" data-i18n="tulipStory"></p>
+
+
+        <div class="product-care">
+            <h3 data-i18n="tulipCareTitle"></h3>
+            <p data-i18n="tulipCareText"></p>
+        </div>
+
+        <div class="product-production">
+            <h3 data-i18n="tulipProductionTitle"></h3>
+            <p data-i18n="tulipProductionText"></p>
+        </div>
+
+        <p class="price">250 Kč</p>
+
+        <button onclick="addToCart('tulip',250)"
+            data-i18n="orderBtn"></button>
+
+    </div>
+
+</section>
+
+<!-- CART -->
+<div class="cart-icon" onclick="toggleCart()">
+    🛒 <span id="cart-count">0</span>
+</div>
+
+<div id="overlay" class="overlay" onclick="toggleCart()"></div>
+
+<aside id="cart" class="cart">
+    <button class="close-cart" onclick="toggleCart()">✖</button>
+    <h2 data-i18n="cartTitle"></h2>
+
+    <div class="cart-content">
+        <ul id="cart-items"></ul>
+    </div>
+
+    <div class="cart-footer">
+        <p>
+            <strong>
+                <span data-i18n="totalLabel"></span>:
+                <span id="cart-total">0</span> Kč
+            </strong>
+        </p>
+
+        <input type="text" id="customer-name" data-i18n-placeholder="namePlaceholder">
+        <input type="tel" id="customer-phone" data-i18n-placeholder="phonePlaceholder">
+        <input type="text" id="customer-address" data-i18n-placeholder="addressPlaceholder">
+        <textarea id="customer-comment" data-i18n-placeholder="commentPlaceholder"></textarea>
+
+        <button onclick="clearCart()" data-i18n="clearCartBtn"></button>
+        <button onclick="checkout()" data-i18n="checkoutBtn"></button>
+    </div>
+</aside>
+
+<script src="script.js"></script>
+
+</body>
+</html>

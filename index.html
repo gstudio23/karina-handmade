@@ -73,7 +73,11 @@
         <h2 data-i18n="sunflowerTitle">Подсолнух</h2>
         <p class="size" data-i18n="sunflowerSize">Размер: ~ 21 см</p>
         <p class="price">400 Kč</p>
-        <button onclick="addToCart('sunflower',400)" data-i18n="orderBtn">Заказать</button>
+        
+        <button onclick="event.stopPropagation(); addToCart('sunflower',400)"
+            data-i18n="orderBtn">
+        </button>
+
     </article>
 
     <!-- ЧЕРЕПАШКА ЁЛОЧКА -->
@@ -97,8 +101,9 @@
         <p class="size" data-i18n="turtleTreeSize">Размер: ~ 15 см</p>
         <p class="price">450 Kč</p>
 
-        <button onclick="addToCart('turtleTree',450)"
-            data-i18n="orderBtn"></button>
+        <button onclick="event.stopPropagation(); addToCart('turtleTree',450)"
+            data-i18n="orderBtn">
+        </button>
 
     </article>
 
@@ -120,13 +125,18 @@
 
         <p class="price">400 Kč</p>
 
-        <button onclick="addToCart('turtleSanta', 400)"
-                data-i18n="orderBtn"></button>
+        <button onclick="event.stopPropagation(); addToCart('turtleSanta',400)"
+            data-i18n="orderBtn">
+        </button>
 
     </article>
 
     <!-- ТЮЛЬПАН -->
-    <article class="card">
+    <article class="card"
+    onclick="window.location.href='tulip.html'"
+    style="cursor:pointer;">
+
+
         <img id="tulip-main" src="tulip-red.jpeg" onclick="openLightbox(this.src)">
         <h2 data-i18n="tulipTitle">Тюльпан</h2>
         <p data-i18n="tulipSize">Размер: ~ 27 см</p>
@@ -143,20 +153,30 @@
                 onclick="selectColor(this,'tulip','yellow')"></span>
         </div>
 
-        <button onclick="addToCart('tulip',250)" data-i18n="orderBtn">Заказать</button>
+        <button onclick="event.stopPropagation(); addToCart('tulip',250)"
+            data-i18n="orderBtn">
+        </button>
     </article>
 
     <!-- ПАУЧОК -->
-    <article class="card">
+    <article class="card"
+    onclick="window.location.href='spider.html'"
+    style="cursor:pointer;">
+
         <img src="spider.jpeg" onclick="openLightbox(this.src)">
         <h2 data-i18n="spiderTitle">Паучок</h2>
         <p data-i18n="spiderSize">Размер: ~ 17 см</p>
         <p class="price">250 Kč</p>
-        <button onclick="addToCart('spider',250)" data-i18n="orderBtn">Заказать</button>
+        
+        <button onclick="event.stopPropagation(); addToCart('span',250)"
+            data-i18n="orderBtn">
+        </button>
     </article>
 
     <!-- КОРОВКА -->
-    <article class="card">
+    <article class="card"
+    onclick="window.location.href='cow.html'"
+    style="cursor:pointer;">
 
         <div class="image-wrapper has-gallery">
             <img id="cow-main"
@@ -174,13 +194,16 @@
         <p data-i18n="cowSize">Размер: ~ 39 см</p>
         <p class="price">950 Kč</p>
 
-        <button onclick="addToCart('cow',950)"
-            data-i18n="orderBtn"></button>
+        <button onclick="event.stopPropagation(); addToCart('cow',950)"
+            data-i18n="orderBtn">
+        </button>
 
     </article>
 
     <!-- СВИНКА -->
-    <article class="card">
+    <article class="card"
+    onclick="window.location.href='pig.html'"
+    style="cursor:pointer;">
 
         <div class="image-wrapper has-gallery">
             <img id="pig-main"
@@ -198,8 +221,9 @@
         <p data-i18n="pigSize"></p>
         <p class="price">800 Kč</p>
 
-        <button onclick="addToCart('pig',800)"
-            data-i18n="orderBtn"></button>
+        <button onclick="event.stopPropagation(); addToCart('pig',800)"
+            data-i18n="orderBtn">
+        </button>
 
     </article>
 
@@ -266,12 +290,18 @@
     </article>
 
     <!-- ЗАЙЧИК ДЛЯ МАЛЫШЕЙ -->
-    <article class="card">
+    <article class="card"
+    onclick="window.location.href='baby-bunny.html'"
+    style="cursor:pointer;">
+
         <img src="baby-bunny.jpeg" onclick="openLightbox(this.src)">
         <h2 data-i18n="babyBunnyTitle"></h2>
         <p data-i18n="babyBunnySize"></p>
         <p class="price">350 Kč</p>
-        <button onclick="addToCart('babyBunny',350)" data-i18n="orderBtn"></button>
+        
+        <button onclick="event.stopPropagation(); addToCart('babyBunny',300)"
+        data-i18n="orderBtn">
+        </button>
     </article>
 
     <!-- ЗАЙЧИК С БАНТИКАМИ -->
@@ -323,7 +353,10 @@
     </article>
 
     <!-- БЕЛОЧКА -->
-    <article class="card">
+    <article class="card"
+    onclick="window.location.href='squirrel.html'"
+    style="cursor:pointer;">
+
         <div class="image-wrapper">
             <img id="squirrel-main" src="squirrel1.jpeg"
                 onclick="openLightbox('squirrel1.jpeg','squirrel',0)">
@@ -339,12 +372,16 @@
         <p data-i18n="squirrelSize"></p>
         <p class="price">1000 Kč</p>
 
-        <button onclick="addToCart('squirrel',1000)"
-            data-i18n="orderBtn">Заказать</button>
+        <button onclick="event.stopPropagation(); addToCart('squirrel',1000)"
+        data-i18n="orderBtn">
+        </button>
     </article>
 
     <!-- КУКЛА -->
-    <article class="card">
+    <article class="card"
+    onclick="window.location.href='doll.html'"
+    style="cursor:pointer;">
+
         <div class="image-wrapper has-gallery">
             <img id="doll-main" src="doll1.jpeg"
                 onclick="openLightbox('doll1.jpeg','doll',0)">
@@ -360,11 +397,16 @@
         <p data-i18n="dollSize"></p>
         <p class="price">900 Kč</p>
 
-        <button onclick="addToCart('doll',900)" data-i18n="orderBtn"></button>
+        <button onclick="event.stopPropagation(); addToCart('doll',900)"
+        data-i18n="orderBtn">
+        </button>
     </article>
 
     <!-- ОЛЕНЁНОК -->
-    <article class="card">
+    <article class="card"
+    onclick="window.location.href='deer.html'"
+    style="cursor:pointer;">
+
         <div class="image-wrapper has-gallery">
             <img id="reindeer-main" src="reindeer1.jpeg"
                 onclick="openLightbox('reindeer1.jpeg','reindeer',0)">
@@ -380,11 +422,16 @@
         <p data-i18n="deerSize"></p>
         <p class="price">300 Kč</p>
 
-        <button onclick="addToCart('reindeer',300)" data-i18n="orderBtn"></button>
+        <button onclick="event.stopPropagation(); addToCart('deer',300)"
+        data-i18n="orderBtn">
+        </button>
     </article>
 
     <!-- ИМБИРНЫЙ ПРЯНИК -->
-    <article class="card">
+    <article class="card"
+    onclick="window.location.href='gingerbread.html'"
+    style="cursor:pointer;">
+
         <div class="image-wrapper has-gallery">
             <img id="gingerbread-main" src="gingerbread1.jpeg"
                 onclick="openLightbox('gingerbread1.jpeg','gingerbread',0)">
@@ -400,11 +447,16 @@
         <p data-i18n="gingerbreadSize"></p>
         <p class="price">250 Kč</p>
 
-        <button onclick="addToCart('gingerbread',250)" data-i18n="orderBtn"></button>
+        <button onclick="event.stopPropagation(); addToCart('gingerbread',250)"
+        data-i18n="orderBtn">
+        </button>
     </article>
     
     <!-- ЗИМНИЙ ВЕНОК -->
-    <article class="card">
+    <article class="card"
+    onclick="window.location.href='wreath.html'"
+    style="cursor:pointer;">
+
         <div class="image-wrapper has-gallery">
             <img id="wreath-main" src="wreath1.jpeg"
                 onclick="openLightbox('wreath1.jpeg','wreath',0)">
@@ -420,16 +472,24 @@
         <p data-i18n="wreathSize"></p>
         <p class="price">250 Kč</p>
 
-        <button onclick="addToCart('wreath',250)" data-i18n="orderBtn"></button>
+        <button onclick="event.stopPropagation(); addToCart('wreath',250)"
+        data-i18n="orderBtn">
+        </button>
     </article>
 
     <!-- ТЫКОВКА -->
-    <article class="card">
+    <article class="card"
+    onclick="window.location.href='pumpkin.html'"
+    style="cursor:pointer;">
+
         <img src="pumpkin.jpeg" onclick="openLightbox(this.src)">
         <h2 data-i18n="pumpkinTitle">Тыковка</h2>
         <p data-i18n="pumpkinSize"></p>
         <p class="price">150 Kč</p>
-        <button onclick="addToCart('pumpkin',150)" data-i18n="orderBtn"></button>
+
+        <button onclick="event.stopPropagation(); addToCart('pumpkin',150)"
+        data-i18n="orderBtn">
+        </button>
     </article>
 
     <!-- МИНИ-ЧЕРЕПАШКИ -->
@@ -473,12 +533,19 @@
     </article>
 
     <!-- ОСЬМИНОЖКИ -->
-    <article class="card">
+    <article class="card"
+    onclick="window.location.href='octopus-keychains.html'"
+    style="cursor:pointer;">
+
         <img src="octopus.jpeg" onclick="openLightbox(this.src)">
         <h2 data-i18n="octopusKeychainTitle">Осьминожки-брелоки</h2>
         <p data-i18n="octopusKeychainSize"></p>
         <p class="price">80 Kč</p>
-        <button onclick="addToCart('octopus',80)" data-i18n="orderBtn"></button>
+        <p class="card-unit-note" data-i18n="octopusUnitNote"></p>
+
+        <button onclick="event.stopPropagation(); addToCart('octopusKeychain',80)"
+        data-i18n="orderBtn">
+        </button>
     </article>
 
 </section>

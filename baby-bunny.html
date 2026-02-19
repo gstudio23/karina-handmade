@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Зайчик для малышей</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+
+<header class="main-header">
+
+    <a href="index.html">
+        <img src="logo.png" class="logo" alt="Logo">
+    </a>
+
+    <div class="burger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+</header>
+
+<nav id="sideMenu" class="side-menu">
+    <a href="index.html#about" data-i18n="menuAbout"></a>
+    <a href="index.html#materials" data-i18n="menuMaterials"></a>
+    <a href="index.html#delivery" data-i18n="menuDelivery"></a>
+</nav>
+
+<div class="menu-overlay" id="menuOverlay" onclick="toggleMenu()"></div>
+
+<section class="product-page">
+
+    <div class="product-gallery">
+
+        <img src="baby-bunny.jpeg" class="main-image" id="mainImage">
+
+        <div class="product-thumbnails">
+            <img src="baby-bunny.jpeg" onclick="changeImage(this.src)">
+        </div>
+
+    </div>
+
+    <div class="product-info">
+
+        <h1 data-i18n="babyBunnyTitle"></h1>
+
+        <p class="product-size" data-i18n="babyBunnySize"></p>
+
+        <p class="product-story" data-i18n="babyBunnyStory"></p>
+
+        <div class="product-care">
+            <h3 data-i18n="babyBunnyCareTitle"></h3>
+            <p data-i18n="babyBunnyCareText"></p>
+        </div>
+
+        <div class="product-production">
+            <h3 data-i18n="babyBunnyProductionTitle"></h3>
+            <p data-i18n="babyBunnyProductionText"></p>
+        </div>
+
+        <p class="price">300 Kč</p>
+
+        <button onclick="addToCart('babyBunny',300)"
+            data-i18n="orderBtn">
+        </button>
+
+    </div>
+
+</section>
+
+<div class="cart-icon" onclick="toggleCart()">
+    🛒 <span id="cart-count">0</span>
+</div>
+
+<div id="overlay" class="overlay" onclick="toggleCart()"></div>
+
+<aside id="cart" class="cart">
+    <button class="close-cart" onclick="toggleCart()">✖</button>
+    <h2 data-i18n="cartTitle"></h2>
+
+    <div class="cart-content">
+        <ul id="cart-items"></ul>
+    </div>
+
+    <div class="cart-footer">
+
+        <p>
+            <strong>
+                <span data-i18n="totalLabel"></span>:
+                <span id="cart-total">0</span> Kč
+            </strong>
+        </p>
+
+        <input type="text" id="customer-name"
+            data-i18n-placeholder="namePlaceholder">
+
+        <input type="tel" id="customer-phone"
+            data-i18n-placeholder="phonePlaceholder">
+
+        <input type="text" id="customer-address"
+            data-i18n-placeholder="addressPlaceholder">
+
+        <textarea id="customer-comment"
+            data-i18n-placeholder="commentPlaceholder"></textarea>
+
+        <button onclick="clearCart()" data-i18n="clearCartBtn"></button>
+        <button onclick="checkout()" data-i18n="checkoutBtn"></button>
+
+    </div>
+</aside>
+
+<script src="script.js"></script>
+
+</body>
+</html>

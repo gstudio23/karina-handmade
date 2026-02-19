@@ -1302,3 +1302,10 @@ body::before {
 body.cart-open .burger {
     display: none;
 }
+.card-unit-note {
+    font-size: 13px;
+    color: #8c7b6b;
+    margin-top: -6px;
+    margin-bottom: 8px;
+    opacity: 0.85;
+}
