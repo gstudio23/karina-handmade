@@ -67,7 +67,7 @@ octopusKeychainTitle: "Осьминожки-брелоки",
 octopusKeychainSize: "Размер___",
 octopusUnitNote: "Цена указана за 1 шт.",
 
-colors: {
+ors: {
 red: "Красный",
 lavender: "Лавандовый",
 pink: "Розовый",
@@ -330,7 +330,65 @@ tulipCareText: `• Связан из плюшевой пряжи Alize Velluto.
                 • Сушить естественным способом.`,
 tulipProductionTitle: "Срок изготовления ✧",
 tulipProductionText: "До 4 дней ручной работы в зависимости от загруженности.",
+
+snowmanTitle: "Снеговик",
+snowmanSize: "Размер: ~ 22 см",
+snowmanStory: `Этот Снеговик родился в самый первый снежный вечер зимы.<br>
+Он хранит в себе тихий скрип снега под ногами и мягкое сияние фонарей.<br>
+Кажется, будто он улыбается каждому, кто верит в зимнее чудо.<br>
+Связанный вручную, он приносит в дом уют и праздничное настроение.`,
+snowmanCareTitle: "Уход ✧",
+snowmanCareText: `• Игрушка связана из плюшевой пряжи Alize Velluto.<br>
+                • Бережная стирка при 30°C.<br>
+                • Не отбеливать. Не гладить.<br>
+                • Сушить естественным способом.`,
+snowmanProductionTitle: "Срок изготовления ✧",
+snowmanProductionText: "До 5 дней ручной работы в зависимости от загруженности.",
+
+beerTitle: "Вязаное пиво",
+beerSize: "Размер: ~ 30 см",
+beerStory: `Это не просто пиво — это хранитель весёлых воспоминаний.<br>
+Оно не заканчивается и никогда не выветривается.<br>
+Идеальный спутник для тёплой компании, уютных вечеров и лёгкого настроения.<br>
+Связанное вручную, оно добавляет интерьеру немного юмора и тепла.`,
+beerCareTitle: "Уход ✧",
+beerCareText: `• Связано из плюшевой пряжи Alize Velluto.<br>
+                • Бережная стирка при 30°C.<br>
+                • Не отбеливать. Не гладить.<br>
+                • Сушить естественным способом.`,
+beerProductionTitle: "Срок изготовления ✧",
+beerProductionText: "До 7 дней ручной работы в зависимости от загруженности.",
+
+miniTurtlesTitle: "Мини-черепашки",
+miniTurtlesSize: "Размер: ~ 10 см",
+miniTurtlesStory: `Эти мини-черепашки словно появились из маленькой сказки.<br>
+Они тихие, добрые и всегда рядом — как маленькие талисманы уюта.<br>
+Каждая из них связана вручную и хранит тепло аккуратной работы.`,
+miniTurtlesCareTitle: "Уход ✧",
+miniTurtlesCareText: `• Связаны из плюшевой пряжи.<br>
+                    • Бережная стирка при 30°C.<br>
+                    • Не отбеливать. Не гладить.<br>
+                    • Сушить естественным способом.`,
+miniTurtlesProductionTitle: "Срок изготовления ✧",
+miniTurtlesProductionText: "До 3 дней ручной работы в зависимости от загруженности.",
+miniTurtlesUnitNote: "Цена указана за 1 шт.",
+
+balloonBearTitle: "Мишка с шариками",
+balloonBearSize: "Размер: ~ 30 см",
+balloonBearStory: `Этот мишка создан для особенных моментов.<br>
+Он держит шарики, на которых может появиться любое имя — чтобы подарок стал по-настоящему личным.<br>
+Он хранит тепло детства и улыбки, которые остаются навсегда.`,
+balloonBearCareTitle: "Уход ✧",
+balloonBearCareText: `• Картина не требует особого ухода.<br>
+• Достаточно иногда аккуратно протирать пыль сухой мягкой тканью.<br>
+• И время от времени вспоминать о тёплых моментах, ради которых она создана.`,
+balloonBearProductionTitle: "Срок изготовления ✧",
+balloonBearProductionText: "До 7 дней ручной работы в зависимости от загруженности.",
+balloonBearPersonalNote: "Имя для шариков укажите в комментарии при оформлении заказа."
 },
+
+
+
 
 ua: {
 title: "Karina Handmade Toys 🧶",
@@ -645,7 +703,68 @@ tulipCareText: `• Зв’язаний із плюшевої пряжі Alize V
                 • Сушити природним способом.`,
 tulipProductionTitle: "Термін виготовлення ✧",
 tulipProductionText: "До 4 днів ручної роботи залежно від завантаженості.",
+
+snowmanTitle: "Сніговик",
+snowmanSize: "Розмір: ~ 22 см",
+
+snowmanStory: `Цей Сніговик народився у перший тихий зимовий вечір.<br>
+Він зберігає в собі скрип снігу під ногами та м’яке світло ліхтарів.<br>
+Здається, ніби він усміхається кожному, хто вірить у зимове диво.<br>
+Створений вручну, він приносить у дім затишок і святковий настрій.`,
+snowmanCareTitle: "Догляд ✧",
+snowmanCareText: `• Іграшка зв’язана з плюшевої пряжі Alize Velluto.<br>
+                • Прати при 30°C.<br>
+                • Не відбілювати. Не прасувати.<br>
+                • Сушити природним способом.`,
+snowmanProductionTitle: "Термін виготовлення ✧",
+snowmanProductionText: "До 5 днів ручної роботи залежно від завантаженості.",
+
+beerTitle: "В’язане пиво",
+beerSize: "Розмір: ~ 30 см",
+beerStory: `Це не просто пиво — це зберігач веселих спогадів.<br>
+Воно не закінчується і ніколи не вивітрюється.<br>
+Ідеальний супутник для теплої компанії та затишних вечорів.<br>
+Створене вручну, воно додає інтер’єру трішки гумору й тепла.`,
+beerCareTitle: "Догляд ✧",
+beerCareText: `• Зв’язане з плюшевої пряжі Alize Velluto.<br>
+                • Прати при 30°C.<br>
+                • Не відбілювати. Не прасувати.<br>
+                • Сушити природним способом.`,
+beerProductionTitle: "Термін виготовлення ✧",
+beerProductionText: "До 7 днів ручної роботи залежно від завантаженості.",
+
+
+miniTurtlesTitle: "Міні-черепашки",
+miniTurtlesSize: "Розмір: ~ 10 см",
+miniTurtlesStory: `Ці міні-черепашки ніби з’явилися з маленької казки.<br>
+Вони тихі, добрі й завжди поруч — як маленькі талісмани затишку.<br>
+Кожна з них створена вручну та зберігає тепло майстерної роботи.`,
+miniTurtlesCareTitle: "Догляд ✧",
+miniTurtlesCareText: `• Зв’язані з плюшевої пряжі.<br>
+                    • Прати при 30°C.<br>
+                    • Не відбілювати. Не прасувати.<br>
+                    • Сушити природним способом.`,
+miniTurtlesProductionTitle: "Термін виготовлення ✧",
+miniTurtlesProductionText: "До 3 днів ручної роботи залежно від завантаженості.",
+miniTurtlesUnitNote: "Ціна вказана за 1 шт.",
+
+balloonBearTitle: "Ведмедик з кульками",
+balloonBearSize: "Розмір: ~ 30 см",
+balloonBearStory: `Цей ведмедик створений для особливих моментів.<br>
+Він тримає кульки, на яких можна написати будь-яке ім’я — щоб подарунок став по-справжньому особистим.<br>
+Він зберігає тепло дитинства та щирі усмішки.`,
+balloonBearCareTitle: "Догляд ✧",
+balloonBearCareText: `• Картина не потребує особливого догляду.<br>
+• Достатньо іноді обережно протирати пил сухою м’якою тканиною.<br>
+• І час від часу згадувати теплі моменти, для яких вона створена.`,
+balloonBearProductionTitle: "Термін виготовлення ✧",
+balloonBearProductionText: "До 7 днів ручної роботи залежно від завантаженості.",
+balloonBearPersonalNote: "Ім’я для кульок вкажіть у коментарі під час оформлення замовлення."
 },
+
+
+
+
 
 cz: {
 title: "Karina Ručně Háčkované Hračky 🧶",
@@ -957,7 +1076,66 @@ tulipCareText: `• Vyroben z plyšové příze Alize Velluto.<br>
                 • Sušit přirozeně.`,
 tulipProductionTitle: "Doba výroby ✧",
 tulipProductionText: "Do 4 dnů ruční práce podle vytížení.",
+
+snowmanTitle: "Sněhulák",
+snowmanSize: "Velikost: ~ 22 cm",
+snowmanStory: `Tento sněhulák se narodil během prvního zimního večera.<br>
+Uchovává v sobě křupání sněhu pod nohama a jemné světlo lamp.<br>
+Jako by se usmíval na každého, kdo věří v zimní kouzlo.<br>
+Ručně vyrobený přináší do domova útulnost a sváteční atmosféru.`,
+snowmanCareTitle: "Péče ✧",
+snowmanCareText: `• Vyrobeno z plyšové příze Alize Velluto.<br>
+                • Prát při 30°C.<br>
+                • Nebělit. Nežehlit.<br>
+                • Sušit přirozeně.`,
+snowmanProductionTitle: "Doba výroby ✧",
+snowmanProductionText: "Do 5 dnů ruční práce podle vytížení.",
+
+beerTitle: "Háčkované pivo",
+beerSize: "Velikost: ~ 18 cm",
+beerStory: `Tohle není jen pivo — je to strážce veselých vzpomínek.<br>
+Nikdy nedojde a nikdy neztratí svou atmosféru.<br>
+Ideální společník pro přátelské večery a útulné chvíle.<br>
+Ručně vyrobené přináší do interiéru trochu humoru a tepla.`,
+beerCareTitle: "Péče ✧",
+beerCareText: `• Vyrobeno z plyšové příze Alize Velluto.<br>
+                • Prát při 30°C.<br>
+                • Nebělit. Nežehlit.<br>
+                • Sušit přirozeně.`,
+beerProductionTitle: "Doba výroby ✧",
+beerProductionText: "Do 7 dnů ruční práce podle vytížení.",
+
+miniTurtlesTitle: "Mini želvičky",
+miniTurtlesSize: "Velikost: ~ 10 cm",
+miniTurtlesStory: `Tyto mini želvičky jako by přišly z malé pohádky.<br>
+Jsou tiché, laskavé a vždy nablízku — jako drobné talismany útulnosti.<br>
+Každá je ručně vyrobena a nese v sobě teplo pečlivé práce.`,
+miniTurtlesCareTitle: "Péče ✧",
+miniTurtlesCareText: `• Vyrobeno z plyšové příze.<br>
+                    • Prát při 30°C.<br>
+                    • Nebělit. Nežehlit.<br>
+                    • Sušit přirozeně.`,
+miniTurtlesProductionTitle: "Doba výroby ✧",
+miniTurtlesProductionText: "Do 3 dnů ruční práce podle vytížení.",
+miniTurtlesUnitNote: "Cena je uvedena za 1 kus.",
+
+balloonBearTitle: "Medvídek s balónky",
+balloonBearSize: "Velikost: ~ 30 cm",
+balloonBearStory: `Tento medvídek je vytvořen pro výjimečné chvíle.<br>
+Drží balónky, na které lze napsat jakékoli jméno — aby byl dárek opravdu osobní.<br>
+Uchovává teplo dětství a upřímné úsměvy.`,
+balloonBearCareTitle: "Péče ✧",
+balloonBearCareText: `• Obraz nevyžaduje žádnou zvláštní péči.<br>
+• Stačí občas jemně otřít prach suchým měkkým hadříkem.<br>
+• A čas od času si připomenout krásné chvíle, pro které byl vytvořen.`,
+balloonBearProductionTitle: "Doba výroby ✧",
+balloonBearProductionText: "Do 7 dnů ruční práce podle vytížení.",
+balloonBearPersonalNote: "Jméno na balónky uveďte do poznámky při objednávce."
 },
+
+
+
+
 
 en: {
 title: "Karina Handmade Crochet Toys 🧶",
@@ -1269,6 +1447,62 @@ tulipCareText: `• Made from plush yarn Alize Velluto.<br>
                 • Air dry only.`,
 tulipProductionTitle: "Production time ✧",
 tulipProductionText: "Up to 4 days of handmade work depending on workload.",
+
+snowmanTitle: "Snowman",
+snowmanSize: "Size: ~ 22 cm",
+snowmanStory: `This Snowman was born on the very first snowy evening of winter.<br>
+He carries the quiet crunch of snow underfoot and the soft glow of street lights.<br>
+It feels as if he smiles at everyone who still believes in winter magic.<br>
+Handmade with care, he brings warmth and festive spirit into your home.`,
+snowmanCareTitle: "Care ✧",
+snowmanCareText: `• Made from plush yarn Alize Velluto.<br>
+                • Wash at 30°C.<br>
+                • Do not bleach. Do not iron.<br>
+                • Air dry only.`,
+snowmanProductionTitle: "Production time ✧",
+snowmanProductionText: "Up to 5 days of handmade work depending on workload.",
+
+beerTitle: "Crochet Beer",
+beerSize: "Size: ~ 30 cm",
+beerStory: `This is not just beer — it’s a keeper of fun memories.<br>
+It never runs out and never loses its spirit.<br>
+A perfect companion for cozy evenings and warm gatherings.<br>
+Handmade with care, it adds a touch of humor and warmth to any interior.`,
+beerCareTitle: "Care ✧",
+beerCareText: `• Made from plush yarn Alize Velluto.<br>
+                • Wash at 30°C.<br>
+                • Do not bleach. Do not iron.<br>
+                • Air dry only.`,
+beerProductionTitle: "Production time ✧",
+beerProductionText: "Up to 4 days of handmade work depending on workload.",
+
+
+miniTurtlesTitle: "Mini Turtles",
+miniTurtlesSize: "Size: ~ 10 cm",
+miniTurtlesStory: `These mini turtles feel like they stepped out of a tiny fairy tale.<br>
+Quiet and kind, they stay close — like little talismans of comfort.<br>
+Each one is handmade and carries the warmth of careful craftsmanship.`,
+miniTurtlesCareTitle: "Care ✧",
+miniTurtlesCareText: `• Made from plush yarn.<br>
+                        • Wash at 30°C.<br>
+                        • Do not bleach. Do not iron.<br>
+                        • Air dry only.`,
+miniTurtlesProductionTitle: "Production time ✧",
+miniTurtlesProductionText: "Up to 3 days of handmade work depending on workload.",
+miniTurtlesUnitNote: "Price is per 1 piece.",
+
+balloonBearTitle: "Bear with Balloons",
+balloonBearSize: "Size: ~ 30 cm",
+balloonBearStory: `This bear is made for special moments.<br>
+He holds balloons where any name can be added — making the gift truly personal.<br>
+He carries the warmth of childhood and smiles that last forever.`,
+balloonBearCareTitle: "Care ✧",
+balloonBearCareText: `• The artwork does not require special care.<br>
+• Simply dust gently with a soft dry cloth from time to time.<br>
+• And occasionally remember the warm moments it was created for.`,
+balloonBearProductionTitle: "Production time ✧",
+balloonBearProductionText: "Up to 7 days of handmade work depending on workload.",
+balloonBearPersonalNote: "Please write the name for the balloons in the comment when placing the order."
 }
 }
 
@@ -1578,40 +1812,14 @@ function selectColor(element, productId, colorKey) {
 
     if (productId === "snowman") {
 
-        const wrapper = img.closest(".image-wrapper");
-        const arrows = wrapper.querySelectorAll(".arrow");
-
-        if (colorKey === "red") {
-
-            img.src = "snowman-red1.jpeg";
-
-            img.setAttribute(
-                "onclick",
-                "openLightbox('snowman-red1.jpeg','snowmanRed',0)"
-            );
-
-            // ✅ включаем галерею
-            wrapper.classList.add("has-gallery");
-
-            arrows.forEach(a => a.style.display = "flex");
-
-        } else {
-
-            img.src = "snowman-" + colorKey + ".jpeg";
-
-            img.setAttribute(
-                "onclick",
-                "openLightbox('" + img.src + "')"
-            );
-
-            // ❌ выключаем галерею
-            wrapper.classList.remove("has-gallery");
-
-            arrows.forEach(a => a.style.display = "none");
-        }
-
-        return;
+    if (colorKey === "red") {
+        img.src = "snowman-red1.jpeg";
+    } else {
+        img.src = "snowman-" + colorKey + ".jpeg";
     }
+
+    return;
+}
 
     // ===== ДЛЯ ВСЕХ ОСТАЛЬНЫХ ТОВАРОВ =====
     img.src = productId + "-" + colorKey + ".jpeg";
@@ -1702,3 +1910,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+
+// =====================
+// SIMPLE PRODUCT IMAGE SWITCH
+// =====================
+
+function changeImage(src) {
+    const main = document.querySelector(".main-image");
+    if (main) {
+        main.src = src;
+    }
+}

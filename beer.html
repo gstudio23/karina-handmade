@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Свинка</title>
+<title>Вязаное пиво</title>
+
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="product.css">
 </head>
@@ -34,46 +35,56 @@
 
 <section class="product-page">
 
+    <!-- ГАЛЕРЕЯ -->
     <div class="product-gallery">
 
-        <img src="pig1.jpeg" class="main-image" id="mainImage">
+        <img src="beer-yellow.jpeg" class="main-image" id="beer-main">
 
         <div class="product-thumbnails">
-            <img src="pig1.jpeg" onclick="changeImage(this.src)">
-            <img src="pig2.jpeg" onclick="changeImage(this.src)">
+            <img src="beer-yellow.jpeg" onclick="changeImage(this.src)">
+        </div>
+
+        <div class="color-picker">
+            <span class="color-circle active" style="background:#f5d76e"
+                onclick="selectColor(this,'beer','yellow')"></span>
+            <span class="color-circle" style="background:#8b4513"
+                onclick="selectColor(this,'beer','brown')"></span>
+            <span class="color-circle" style="background:#3d7a3f"
+                onclick="selectColor(this,'beer','green')"></span>
         </div>
 
     </div>
 
+    <!-- ИНФОРМАЦИЯ -->
     <div class="product-info">
 
-        <h1 data-i18n="pigTitle">Свинка</h1>
+        <h1 data-i18n="beerTitle"></h1>
 
-        <p class="product-size" data-i18n="pigSize">
-        Размер: ~ 30 см
-        </p>
+        <p class="product-size" data-i18n="beerSize"></p>
 
-        <p class="product-story" data-i18n="pigStory"></p>
+        <p class="product-story" data-i18n="beerStory"></p>
 
         <div class="product-care">
-           <h3 data-i18n="pigCareTitle"></h3>
-           <p data-i18n="pigCareText"></p>
+            <h3 data-i18n="beerCareTitle"></h3>
+            <p data-i18n="beerCareText"></p>
         </div>
 
         <div class="product-production">
-            <h3 data-i18n="pigProductionTitle"></h3>
-            <p data-i18n="pigProductionText"></p>
+            <h3 data-i18n="beerProductionTitle"></h3>
+            <p data-i18n="beerProductionText"></p>
         </div>
 
-        <p class="price">800 Kč</p>
+        <p class="price">350 Kč</p>
 
-        <button onclick="addToCart('pig',800)"
-        data-i18n="orderBtn"></button>
+        <button onclick="addToCart('beer',350)"
+            data-i18n="orderBtn">
+        </button>
 
     </div>
 
 </section>
 
+<!-- CART -->
 <div class="cart-icon" onclick="toggleCart()">
     🛒 <span id="cart-count">0</span>
 </div>
@@ -81,7 +92,6 @@
 <div id="overlay" class="overlay" onclick="toggleCart()"></div>
 
 <aside id="cart" class="cart">
-
     <button class="close-cart" onclick="toggleCart()">✖</button>
     <h2 data-i18n="cartTitle"></h2>
 
@@ -90,7 +100,6 @@
     </div>
 
     <div class="cart-footer">
-
         <p>
             <strong>
                 <span data-i18n="totalLabel"></span>:
@@ -99,30 +108,23 @@
         </p>
 
         <input type="text" id="customer-name"
-            data-i18n-placeholder="namePlaceholder">
+               data-i18n-placeholder="namePlaceholder">
 
         <input type="tel" id="customer-phone"
-            data-i18n-placeholder="phonePlaceholder">
+               data-i18n-placeholder="phonePlaceholder">
 
         <input type="text" id="customer-address"
-            data-i18n-placeholder="addressPlaceholder">
+               data-i18n-placeholder="addressPlaceholder">
 
         <textarea id="customer-comment"
-            data-i18n-placeholder="commentPlaceholder"></textarea>
+                  data-i18n-placeholder="commentPlaceholder"></textarea>
 
         <button onclick="clearCart()" data-i18n="clearCartBtn"></button>
         <button onclick="checkout()" data-i18n="checkoutBtn"></button>
-
     </div>
 </aside>
 
 <script src="script.js"></script>
-
-<script>
-function changeImage(src){
-    document.getElementById("mainImage").src = src;
-}
-</script>
 
 </body>
 </html>

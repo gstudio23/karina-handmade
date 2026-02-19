@@ -49,8 +49,7 @@
 
         <div class="image-wrapper">
             <img id="frog-main"
-                src="frog.jpeg"
-                onclick="openLightbox('frog1.jpeg','frog',0)">
+                src="frog.jpeg">
         </div>
 
         <h2 data-i18n="frogTitle">Жабка</h2>
@@ -69,7 +68,7 @@
          onclick="window.location.href='sunflower.html'"
          style="cursor:pointer;">
 
-        <img src="sunflower.jpeg" onclick="openLightbox(this.src)">
+        <img src="sunflower.jpeg">
         <h2 data-i18n="sunflowerTitle">Подсолнух</h2>
         <p class="size" data-i18n="sunflowerSize">Размер: ~ 21 см</p>
         <p class="price">400 Kč</p>
@@ -87,14 +86,7 @@
 
         <div class="image-wrapper has-gallery">
             <img id="turtleTree-main"
-                src="turtle1.jpeg"
-                onclick="openLightbox('turtle1.jpeg','turtleTree',0)">
-
-            <div class="arrow left"
-                onclick="prevImageGallery(event,'turtleTree','turtleTree-main')">❮</div>
-
-            <div class="arrow right"
-                onclick="nextImageGallery(event,'turtleTree','turtleTree-main')">❯</div>
+                src="turtle1.jpeg">
         </div>
 
         <h2 data-i18n="turtleTreeTitle">Черепашка Ёлочка</h2>
@@ -115,8 +107,7 @@
 
         <div class="image-wrapper">
             <img id="turtleSanta-main"
-                src="turtle-santa.jpeg"
-                onclick="openLightbox('turtle-santa.jpeg')">
+                src="turtle-santa.jpeg">
         </div>
 
         <h2 data-i18n="turtleSantaTitle">Черепашка Санта-Клаус</h2>
@@ -137,7 +128,7 @@
     style="cursor:pointer;">
 
 
-        <img id="tulip-main" src="tulip-red.jpeg" onclick="openLightbox(this.src)">
+        <img id="tulip-main" src="tulip-red.jpeg">
         <h2 data-i18n="tulipTitle">Тюльпан</h2>
         <p data-i18n="tulipSize">Размер: ~ 27 см</p>
         <p class="price">250 Kč</p>
@@ -163,7 +154,7 @@
     onclick="window.location.href='spider.html'"
     style="cursor:pointer;">
 
-        <img src="spider.jpeg" onclick="openLightbox(this.src)">
+        <img src="spider.jpeg">
         <h2 data-i18n="spiderTitle">Паучок</h2>
         <p data-i18n="spiderSize">Размер: ~ 17 см</p>
         <p class="price">250 Kč</p>
@@ -180,14 +171,7 @@
 
         <div class="image-wrapper has-gallery">
             <img id="cow-main"
-                src="cow1.jpeg"
-                onclick="openLightbox('cow1.jpeg','cow',0)">
-
-            <div class="arrow left"
-                onclick="prevImageGallery(event,'cow','cow-main')">❮</div>
-
-            <div class="arrow right"
-                onclick="nextImageGallery(event,'cow','cow-main')">❯</div>
+                src="cow1.jpeg">
         </div>
 
         <h2 data-i18n="cowTitle">Плюшевая коровка</h2>
@@ -207,14 +191,7 @@
 
         <div class="image-wrapper has-gallery">
             <img id="pig-main"
-                src="pig1.jpeg"
-                onclick="openLightbox('pig1.jpeg','pig',0)">
-
-            <div class="arrow left"
-                onclick="prevImageGallery(event,'pig','pig-main')">❮</div>
-
-            <div class="arrow right"
-                onclick="nextImageGallery(event,'pig','pig-main')">❯</div>
+                src="pig1.jpeg">
         </div>
 
         <h2 data-i18n="pigTitle">Свинка</h2>
@@ -228,34 +205,28 @@
     </article>
 
     <!-- МИШКА -->
-    <article class="card">
+    <article class="card"
+    onclick="window.location.href='balloon-bear.html'"
+    style="cursor:pointer;">
         <div class="image-wrapper">
-            <img id="balloon-main" src="balloon1.jpeg"
-                onclick="openLightbox('balloon1.jpeg','balloonBear',0)">
-            <div class="arrow left"
-                onclick="prevImageGallery(event,'balloonBear','balloon-main')">❮</div>
-            <div class="arrow right"
-                onclick="nextImageGallery(event,'balloonBear','balloon-main')">❯</div>
+            <img id="balloon-main" src="balloon1.jpeg">
         </div>
         <h2 data-i18n="balloonBearTitle">Мишка с шариками</h2>
         <p data-i18n="balloonBearDesc">Персонализированная картина</p>
         <p class="price">800 Kč</p>
-        <button onclick="addToCart('balloonBear',800)" data-i18n="orderBtn">Заказать</button>
+        <button onclick="event.stopPropagation(); addToCart('balloonBear',800)"
+        data-i18n="orderBtn">
+        </button>
     </article>
 
     <!-- СНЕГОВИК -->
-    <article class="card">
+    <article class="card"
+    onclick="window.location.href='snowman.html'"
+    style="cursor:pointer;">
 
         <div class="image-wrapper has-gallery" id="snowman-wrapper">
             <img id="snowman-main"
-                src="snowman-red1.jpeg"
-                onclick="openLightbox('snowman-red1.jpeg','snowmanRed',0)">
-
-            <div class="arrow left"
-                onclick="prevImageGallery(event,'snowmanRed','snowman-main')">❮</div>
-
-            <div class="arrow right"
-                onclick="nextImageGallery(event,'snowmanRed','snowman-main')">❯</div>
+            src="snowman-red1.jpeg">
         </div>
 
         <h2 data-i18n="snowmanTitle">Снеговик</h2>
@@ -263,6 +234,7 @@
         <p class="price">600 Kč</p>
 
         <div class="color-picker">
+
             <span class="color-circle active"
                 style="background:#d63c3c"
                 onclick="selectColor(this,'snowman','red')"></span>
@@ -284,9 +256,9 @@
                 onclick="selectColor(this,'snowman','beige')"></span>
         </div>
 
-        <button onclick="addToCart('snowman',600)"
-            data-i18n="orderBtn"></button>
-
+        <button onclick="event.stopPropagation(); addToCart('snowman',600)"
+        data-i18n="orderBtn">
+        </button>
     </article>
 
     <!-- ЗАЙЧИК ДЛЯ МАЛЫШЕЙ -->
@@ -294,7 +266,7 @@
     onclick="window.location.href='baby-bunny.html'"
     style="cursor:pointer;">
 
-        <img src="baby-bunny.jpeg" onclick="openLightbox(this.src)">
+        <img src="baby-bunny.jpeg">
         <h2 data-i18n="babyBunnyTitle"></h2>
         <p data-i18n="babyBunnySize"></p>
         <p class="price">350 Kč</p>
@@ -309,8 +281,7 @@
 
         <div class="image-wrapper">
             <img id="bowBunny-main"
-                src="bowBunny-beige.jpeg"
-                onclick="openLightbox(this.src)">
+                src="bowBunny-beige.jpeg">
         </div>
 
         <h2 data-i18n="bowBunnyTitle">Зайчик с бантиками</h2>
@@ -333,9 +304,11 @@
     </article>
 
     <!-- ПИВО -->
-    <article class="card">
-        <img id="beer-main" src="beer-yellow.jpeg"
-            onclick="openLightbox(this.src)">
+    <article class="card"
+    onclick="window.location.href='beer.html'"
+    style="cursor:pointer;">
+
+        <img id="beer-main" src="beer-yellow.jpeg">
         <h2 data-i18n="beerTitle">Пиво</h2>
         <p data-i18n="beerSize"></p>
         <p class="price">800 Kč</p>
@@ -349,7 +322,9 @@
                 onclick="selectColor(this,'beer','green')"></span>
         </div>
 
-        <button onclick="addToCart('beer',800)" data-i18n="orderBtn">Заказать</button>
+        <button onclick="event.stopPropagation(); addToCart('beer',350)"
+        data-i18n="orderBtn">
+    </button>
     </article>
 
     <!-- БЕЛОЧКА -->
@@ -358,14 +333,7 @@
     style="cursor:pointer;">
 
         <div class="image-wrapper">
-            <img id="squirrel-main" src="squirrel1.jpeg"
-                onclick="openLightbox('squirrel1.jpeg','squirrel',0)">
-
-            <div class="arrow left"
-                onclick="prevImageGallery(event,'squirrel','squirrel-main')">❮</div>
-
-            <div class="arrow right"
-                onclick="nextImageGallery(event,'squirrel','squirrel-main')">❯</div>
+            <img id="squirrel-main" src="squirrel1.jpeg">
         </div>
 
         <h2 data-i18n="squirrelTitle">Белочка</h2>
@@ -383,14 +351,7 @@
     style="cursor:pointer;">
 
         <div class="image-wrapper has-gallery">
-            <img id="doll-main" src="doll1.jpeg"
-                onclick="openLightbox('doll1.jpeg','doll',0)">
-
-            <div class="arrow left"
-                onclick="prevImageGallery(event,'doll','doll-main')">❮</div>
-
-            <div class="arrow right"
-                onclick="nextImageGallery(event,'doll','doll-main')">❯</div>
+            <img id="doll-main" src="doll1.jpeg">
         </div>
 
         <h2 data-i18n="dollTitle">Кукла</h2>
@@ -408,14 +369,7 @@
     style="cursor:pointer;">
 
         <div class="image-wrapper has-gallery">
-            <img id="reindeer-main" src="reindeer1.jpeg"
-                onclick="openLightbox('reindeer1.jpeg','reindeer',0)">
-
-            <div class="arrow left"
-                onclick="prevImageGallery(event,'reindeer','reindeer-main')">❮</div>
-
-            <div class="arrow right"
-                onclick="nextImageGallery(event,'reindeer','reindeer-main')">❯</div>
+            <img id="reindeer-main" src="reindeer1.jpeg">
         </div>
 
         <h2 data-i18n="deerTitle">Оленёнок</h2>
@@ -433,14 +387,7 @@
     style="cursor:pointer;">
 
         <div class="image-wrapper has-gallery">
-            <img id="gingerbread-main" src="gingerbread1.jpeg"
-                onclick="openLightbox('gingerbread1.jpeg','gingerbread',0)">
-
-            <div class="arrow left"
-                onclick="prevImageGallery(event,'gingerbread','gingerbread-main')">❮</div>
-
-            <div class="arrow right"
-                onclick="nextImageGallery(event,'gingerbread','gingerbread-main')">❯</div>
+            <img id="gingerbread-main" src="gingerbread1.jpeg">
         </div>
 
         <h2 data-i18n="gingerbreadTitle">Имбирный пряник</h2>
@@ -458,14 +405,7 @@
     style="cursor:pointer;">
 
         <div class="image-wrapper has-gallery">
-            <img id="wreath-main" src="wreath1.jpeg"
-                onclick="openLightbox('wreath1.jpeg','wreath',0)">
-
-            <div class="arrow left"
-                onclick="prevImageGallery(event,'wreath','wreath-main')">❮</div>
-
-            <div class="arrow right"
-                onclick="nextImageGallery(event,'wreath','wreath-main')">❯</div>
+            <img id="wreath-main" src="wreath1.jpeg">
         </div>
 
         <h2 data-i18n="wreathTitle">Зимний веночек</h2>
@@ -482,7 +422,7 @@
     onclick="window.location.href='pumpkin.html'"
     style="cursor:pointer;">
 
-        <img src="pumpkin.jpeg" onclick="openLightbox(this.src)">
+        <img src="pumpkin.jpeg">
         <h2 data-i18n="pumpkinTitle">Тыковка</h2>
         <p data-i18n="pumpkinSize"></p>
         <p class="price">150 Kč</p>
@@ -493,12 +433,13 @@
     </article>
 
     <!-- МИНИ-ЧЕРЕПАШКИ -->
-    <article class="card">
+    <article class="card"
+        onclick="window.location.href='mini-turtles.html'"
+        style="cursor:pointer;">
 
         <div class="image-wrapper">
             <img id="miniTurtles-main"
-                src="miniTurtles-mix.jpeg"
-                onclick="openLightbox(this.src)">
+                src="miniTurtles-mix.jpeg">
         </div>
 
         <h2 data-i18n="miniTurtlesTitle">Мини-черепашки</h2>
@@ -527,8 +468,9 @@
 
         </div>
 
-        <button onclick="addToCart('miniTurtles',250)"
-            data-i18n="orderBtn">Заказать</button>
+        <button onclick="event.stopPropagation(); addToCart('miniTurtles',200)"
+            data-i18n="orderBtn">
+        </button>
 
     </article>
 
@@ -537,7 +479,7 @@
     onclick="window.location.href='octopus-keychains.html'"
     style="cursor:pointer;">
 
-        <img src="octopus.jpeg" onclick="openLightbox(this.src)">
+        <img src="octopus.jpeg">
         <h2 data-i18n="octopusKeychainTitle">Осьминожки-брелоки</h2>
         <p data-i18n="octopusKeychainSize"></p>
         <p class="price">80 Kč</p>
