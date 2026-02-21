@@ -54,9 +54,9 @@
 
         <h2 data-i18n="frogTitle">Жабка</h2>
 
-        <p class="size" data-i18n="frogSize">Размер: ~ 20 см</p>
+        <p class="size" data-i18n="frogSize">Размер: ~ 23 см</p>
 
-        <p class="price">400 Kč</p>
+        <p class="price">300 Kč</p>
 
         <button onclick="event.stopPropagation(); addToCart('frog',400)"
             data-i18n="orderBtn">
@@ -70,8 +70,8 @@
 
         <img src="sunflower.jpeg">
         <h2 data-i18n="sunflowerTitle">Подсолнух</h2>
-        <p class="size" data-i18n="sunflowerSize">Размер: ~ 21 см</p>
-        <p class="price">400 Kč</p>
+        <p class="size" data-i18n="sunflowerSize">Размер: ~ 24 см</p>
+        <p class="price">350 Kč</p>
         
         <button onclick="event.stopPropagation(); addToCart('sunflower',400)"
             data-i18n="orderBtn">
@@ -90,7 +90,7 @@
         </div>
 
         <h2 data-i18n="turtleTreeTitle">Черепашка Ёлочка</h2>
-        <p class="size" data-i18n="turtleTreeSize">Размер: ~ 15 см</p>
+        <p class="size" data-i18n="turtleTreeSize">Размер: ~ 23 см</p>
         <p class="price">450 Kč</p>
 
         <button onclick="event.stopPropagation(); addToCart('turtleTree',450)"
@@ -112,7 +112,7 @@
 
         <h2 data-i18n="turtleSantaTitle">Черепашка Санта-Клаус</h2>
 
-        <p data-i18n="turtleSantaSize">Размер</p>
+        <p data-i18n="turtleSantaSize">Размер ~23</p>
 
         <p class="price">400 Kč</p>
 
@@ -135,13 +135,13 @@
 
         <div class="color-picker">
             <span class="color-circle active" style="background:#d63c3c"
-                onclick="selectColor(this,'tulip','red')"></span>
+                onclick="event.stopPropagation(); selectColor(this,'tulip','red')"></span>
             <span class="color-circle" style="background:#c79be7"
-                onclick="selectColor(this,'tulip','lavender')"></span>
+                onclick="event.stopPropagation(); selectColor(this,'tulip','lavender')"></span>
             <span class="color-circle" style="background:#f5a6c8"
-                onclick="selectColor(this,'tulip','pink')"></span>
+                onclick="event.stopPropagation(); selectColor(this,'tulip','pink')"></span>
             <span class="color-circle" style="background:#f6d24a"
-                onclick="selectColor(this,'tulip','yellow')"></span>
+                onclick="event.stopPropagation(); selectColor(this,'tulip','yellow')"></span>
         </div>
 
         <button onclick="event.stopPropagation(); addToCart('tulip',250)"
@@ -175,8 +175,8 @@
         </div>
 
         <h2 data-i18n="cowTitle">Плюшевая коровка</h2>
-        <p data-i18n="cowSize">Размер: ~ 39 см</p>
-        <p class="price">950 Kč</p>
+        <p data-i18n="cowSize">Размер: ~ 40 см</p>
+        <p class="price">1000 Kč</p>
 
         <button onclick="event.stopPropagation(); addToCart('cow',950)"
             data-i18n="orderBtn">
@@ -195,7 +195,7 @@
         </div>
 
         <h2 data-i18n="pigTitle">Свинка</h2>
-        <p data-i18n="pigSize"></p>
+        <p data-i18n="pigSize">Размер: ~ 30 см</p>
         <p class="price">800 Kč</p>
 
         <button onclick="event.stopPropagation(); addToCart('pig',800)"
@@ -213,7 +213,9 @@
         </div>
         <h2 data-i18n="balloonBearTitle">Мишка с шариками</h2>
         <p data-i18n="balloonBearDesc">Персонализированная картина</p>
+        <p data-i18n="balloonBearSize">Размер: ~ 30 x 40 см</p>
         <p class="price">800 Kč</p>
+
         <button onclick="event.stopPropagation(); addToCart('balloonBear',800)"
         data-i18n="orderBtn">
         </button>
@@ -230,30 +232,30 @@
         </div>
 
         <h2 data-i18n="snowmanTitle">Снеговик</h2>
-        <p data-i18n="snowmanSize"></p>
+        <p data-i18n="snowmanSize">Размер: ~ 27 см</p>
         <p class="price">600 Kč</p>
 
         <div class="color-picker">
 
             <span class="color-circle active"
                 style="background:#d63c3c"
-                onclick="selectColor(this,'snowman','red')"></span>
+                onclick="event.stopPropagation(); selectColor(this,'snowman','red')"></span>
 
             <span class="color-circle"
                 style="background:#5aa9e6"
-                onclick="selectColor(this,'snowman','blue')"></span>
+                onclick="event.stopPropagation(); selectColor(this,'snowman','blue')"></span>
 
             <span class="color-circle"
                 style="background:#f5a6c8"
-                onclick="selectColor(this,'snowman','pink')"></span>
+                onclick="event.stopPropagation(); selectColor(this,'snowman','pink')"></span>
 
             <span class="color-circle"
                 style="background:#2e5e3e"
-                onclick="selectColor(this,'snowman','green')"></span>
+                onclick="event.stopPropagation(); selectColor(this,'snowman','green')"></span>
 
             <span class="color-circle"
                 style="background:#c49a6c"
-                onclick="selectColor(this,'snowman','beige')"></span>
+                onclick="event.stopPropagation(); selectColor(this,'snowman','beige')"></span>
         </div>
 
         <button onclick="event.stopPropagation(); addToCart('snowman',600)"
@@ -267,8 +269,8 @@
     style="cursor:pointer;">
 
         <img src="baby-bunny.jpeg">
-        <h2 data-i18n="babyBunnyTitle"></h2>
-        <p data-i18n="babyBunnySize"></p>
+        <h2 data-i18n="babyBunnyTitle">Зайчик для малышей</h2>
+        <p data-i18n="babyBunnySize">Размер: ~ 26 см</p>
         <p class="price">350 Kč</p>
         
         <button onclick="event.stopPropagation(); addToCart('babyBunny',300)"
@@ -277,7 +279,9 @@
     </article>
 
     <!-- ЗАЙЧИК С БАНТИКАМИ -->
-    <article class="card">
+    <article class="card"
+    onclick="window.location.href='bow-bunny.html'"
+    style="cursor:pointer;">
 
         <div class="image-wrapper">
             <img id="bowBunny-main"
@@ -285,21 +289,22 @@
         </div>
 
         <h2 data-i18n="bowBunnyTitle">Зайчик с бантиками</h2>
-        <p data-i18n="bowBunnySize"></p>
-        <p class="price">550 Kč</p>
+        <p data-i18n="bowBunnySize">Размер: ~ 23 см</p>
+        <p class="price">450 Kč</p>
 
         <div class="color-picker">
             <span class="color-circle active"
                 style="background:#f3d7c6"
-                onclick="selectColor(this,'bowBunny','beige')"></span>
+                onclick="event.stopPropagation(); selectColor(this,'bowBunny','beige')"></span>
 
             <span class="color-circle"
                 style="background:#f5a6c8"
-                onclick="selectColor(this,'bowBunny','pink')"></span>
+                onclick="event.stopPropagation(); selectColor(this,'bowBunny','pink')"></span>
         </div>
 
-        <button onclick="addToCart('bowBunny',550)"
-            data-i18n="orderBtn"></button>
+        <button onclick="event.stopPropagation(); addToCart('bowBunny',450)"
+        data-i18n="orderBtn">
+        </button>
 
     </article>
 
@@ -310,16 +315,16 @@
 
         <img id="beer-main" src="beer-yellow.jpeg">
         <h2 data-i18n="beerTitle">Пиво</h2>
-        <p data-i18n="beerSize"></p>
+        <p data-i18n="beerSize">Размер: ~ 30 см</p>
         <p class="price">800 Kč</p>
 
         <div class="color-picker">
             <span class="color-circle active" style="background:#f5d76e"
-                onclick="selectColor(this,'beer','yellow')"></span>
+                onclick="event.stopPropagation(); selectColor(this,'beer','yellow')"></span>
             <span class="color-circle" style="background:#8b4513"
-                onclick="selectColor(this,'beer','brown')"></span>
+                onclick="event.stopPropagation(); selectColor(this,'beer','brown')"></span>
             <span class="color-circle" style="background:#3d7a3f"
-                onclick="selectColor(this,'beer','green')"></span>
+                onclick="event.stopPropagation(); selectColor(this,'beer','green')"></span>
         </div>
 
         <button onclick="event.stopPropagation(); addToCart('beer',350)"
@@ -337,7 +342,7 @@
         </div>
 
         <h2 data-i18n="squirrelTitle">Белочка</h2>
-        <p data-i18n="squirrelSize"></p>
+        <p data-i18n="squirrelSize">Размер: ~ 56 см</p>
         <p class="price">1000 Kč</p>
 
         <button onclick="event.stopPropagation(); addToCart('squirrel',1000)"
@@ -355,8 +360,8 @@
         </div>
 
         <h2 data-i18n="dollTitle">Кукла</h2>
-        <p data-i18n="dollSize"></p>
-        <p class="price">900 Kč</p>
+        <p data-i18n="dollSize">Размер: ~ 26 см</p>
+        <p class="price">700 Kč</p>
 
         <button onclick="event.stopPropagation(); addToCart('doll',900)"
         data-i18n="orderBtn">
@@ -373,7 +378,7 @@
         </div>
 
         <h2 data-i18n="deerTitle">Оленёнок</h2>
-        <p data-i18n="deerSize"></p>
+        <p data-i18n="deerSize">Размер: ~ 18 см</p>
         <p class="price">300 Kč</p>
 
         <button onclick="event.stopPropagation(); addToCart('deer',300)"
@@ -391,7 +396,7 @@
         </div>
 
         <h2 data-i18n="gingerbreadTitle">Имбирный пряник</h2>
-        <p data-i18n="gingerbreadSize"></p>
+        <p data-i18n="gingerbreadSize">Размер: ~ 15 см</p>
         <p class="price">250 Kč</p>
 
         <button onclick="event.stopPropagation(); addToCart('gingerbread',250)"
@@ -409,7 +414,7 @@
         </div>
 
         <h2 data-i18n="wreathTitle">Зимний веночек</h2>
-        <p data-i18n="wreathSize"></p>
+        <p data-i18n="wreathSize">Размер: ~ 20 см</p>
         <p class="price">250 Kč</p>
 
         <button onclick="event.stopPropagation(); addToCart('wreath',250)"
@@ -424,7 +429,7 @@
 
         <img src="pumpkin.jpeg">
         <h2 data-i18n="pumpkinTitle">Тыковка</h2>
-        <p data-i18n="pumpkinSize"></p>
+        <p data-i18n="pumpkinSize">Размер: ~ 10 см</p>
         <p class="price">150 Kč</p>
 
         <button onclick="event.stopPropagation(); addToCart('pumpkin',150)"
@@ -443,27 +448,28 @@
         </div>
 
         <h2 data-i18n="miniTurtlesTitle">Мини-черепашки</h2>
-        <p data-i18n="miniTurtlesSize"></p>
+        <p data-i18n="miniTurtlesSize">Размер: ~ 10 см</p>
         <p class="price">250 Kč</p>
+        <p class="card-unit-note" data-i18n="octopusUnitNote">Цена указана за 1 шт.",</p>
 
         <div class="color-picker">
 
             <!-- половинка красный/синий -->
             <span class="color-circle active"
                 style="background: linear-gradient(90deg, #d63c3c 50%, #5aa9e6 50%);"
-                onclick="selectColor(this,'miniTurtles','mix')">
+                onclick="event.stopPropagation(); selectColor(this,'miniTurtles','mix')">
             </span>
 
             <!-- красный -->
             <span class="color-circle"
                 style="background:#d63c3c"
-                onclick="selectColor(this,'miniTurtles','red')">
+                onclick="event.stopPropagation(); selectColor(this,'miniTurtles','red')">
             </span>
 
             <!-- синий -->
             <span class="color-circle"
                 style="background:#5aa9e6"
-                onclick="selectColor(this,'miniTurtles','blue')">
+                onclick="event.stopPropagation(); selectColor(this,'miniTurtles','blue')">
             </span>
 
         </div>
@@ -481,9 +487,9 @@
 
         <img src="octopus.jpeg">
         <h2 data-i18n="octopusKeychainTitle">Осьминожки-брелоки</h2>
-        <p data-i18n="octopusKeychainSize"></p>
+        <p data-i18n="octopusKeychainSize">Размер: ~ 7 см</p>
         <p class="price">80 Kč</p>
-        <p class="card-unit-note" data-i18n="octopusUnitNote"></p>
+        <p class="card-unit-note" data-i18n="octopusUnitNote">Цена указана за 1 шт.",</p>
 
         <button onclick="event.stopPropagation(); addToCart('octopusKeychain',80)"
         data-i18n="orderBtn">

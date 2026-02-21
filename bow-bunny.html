@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Зайчик с бантиками</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+
+<header class="main-header">
+    <a href="index.html">
+        <img src="logo.png" class="logo" alt="Logo">
+    </a>
+
+    <div class="burger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+
+<nav id="sideMenu" class="side-menu">
+    <a href="index.html#about" data-i18n="menuAbout"></a>
+    <a href="index.html#materials" data-i18n="menuMaterials"></a>
+    <a href="index.html#delivery" data-i18n="menuDelivery"></a>
+</nav>
+
+<div class="menu-overlay" id="menuOverlay" onclick="toggleMenu()"></div>
+
+<section class="product-page">
+
+    <!-- ГАЛЕРЕЯ -->
+    <div class="product-gallery">
+
+        <img src="bowBunny-beige.jpeg"
+             class="main-image"
+             id="bowBunny-main">
+
+        <div class="product-thumbnails">
+            <img src="bowBunny-beige.jpeg" onclick="changeImage(this.src)">
+        </div>
+
+
+         <div class="color-picker">
+            <span class="color-circle active"
+                style="background:#f3d7c6"
+                onclick="selectColor(this,'bowBunny','beige')"></span>
+
+            <span class="color-circle"
+                style="background:#f5a6c8"
+                onclick="selectColor(this,'bowBunny','pink')"></span>
+        </div>
+
+    </div>
+
+    <!-- ИНФОРМАЦИЯ -->
+    <div class="product-info">
+
+        <h1 data-i18n="bowBunnyTitle"></h1>
+
+        <p class="product-size" data-i18n="bowBunnySize"></p>
+
+        <p class="product-story" data-i18n="bowBunnyStory"></p>
+
+        <div class="product-care">
+            <h3 data-i18n="bowBunnyCareTitle"></h3>
+            <p data-i18n="bowBunnyCareText"></p>
+        </div>
+
+        <div class="product-production">
+            <h3 data-i18n="bowBunnyProductionTitle"></h3>
+            <p data-i18n="bowBunnyProductionText"></p>
+        </div>
+
+        <p class="price">600 Kč</p>
+
+        <button onclick="addToCart('bowBunny',600)"
+                data-i18n="orderBtn">
+        </button>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
